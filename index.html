@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<!-- Yenan Huang (301416586) -->
+<!-- P-1 Progress Check 2 -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>P01 - Style Guide</title>
+
+    <!-- Normalize.css file downloaded from https://necolas.github.io/normalize.css/ -->
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
+    <link href="css/flexbox.css" rel="stylesheet" />
+    <!-- Font css file generated using Adobe Font -->
+    <link rel="stylesheet" href="https://use.typekit.net/vkt6nof.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Style Guide</h1>
+      <div class="image-wrapper">
+        <img src="img/evergreen.png" alt="evergreen_logo" class="top-logo" />
+      </div>
+    </header>
+
+    <section class="nav-bar">
+      <nav class="main-nav flex-nav">
+        <a class="link-nav flex-nav-item" href="index.html">Style Guide</a>
+        <a class="link-nav flex-nav-item" href="products.html">Products</a>
+        <a class="link-nav flex-nav-item" href="checkout.html">Checkout</a>
+      </nav>
+
+      <nav class="sub-nav flex-nav">
+        <a class="link-nav flex-nav-item" href="#interactive_elements"
+          >Interactive Elements</a
+        >
+        <a class="link-nav flex-nav-item" href="#text_elements"
+          >Text Elements</a
+        >
+        <a class="link-nav flex-nav-item" href="#combined_elements"
+          >Combined Elements</a
+        >
+        <a class="link-nav flex-nav-item" href="#branding">Branding Ideas</a>
+        <a class="link-nav flex-nav-item" href="#brand-components"
+          >Brand Components</a
+        >
+        <a class="link-nav flex-nav-item" href="#citations">Citations</a>
+      </nav>
+    </section>
+
+    <main>
+      <!-- INTERACTIVE ELEMENTS SECTION // -->
+      <section id="interactive_elements">
+        <h2>Interactive Elements</h2>
+
+        <!-- IN-TEXT LINK -->
+        <section id="intext_link" class="element">
+          <h3>In-text link</h3>
+
+          <h4>CSS selector:</h4>
+          <p>.link-intext</p>
+
+          <h4>Sample code:</h4>
+          <code
+            >&lt;a href="#" class="link-intext"&gt;In-text link&lt;/a&gt;</code
+          >
+
+          <h4>Rendered element:</h4>
+          <a class="link-intext" href="#intext_link">In-text link</a>
+        </section>
+
+        <!-- NAVIGATION LINK -->
+        <section id="link_nav" class="element">
+          <h3>Navigation Link</h3>
+
+          <h4>CSS selector:</h4>
+          <p>.link-nav</p>
+
+          <h4>Sample code:</h4>
+          <code
+            >&lt;a href="#" class="link-nav"&gt;Navigation Link&lt;/a&gt;</code
+          >
+
+          <h4>Rendered element:</h4>
+          <a class="link-nav" href="#link_nav">Navigation Link</a>
+        </section>
+
+        <!-- SUBMIT BUTTON FOR FORM -->
+        <section id="button_submit" class="element">
+          <h3>Submit Buttons</h3>
+
+          <h4>CSS selector:</h4>
+          <p>.button-submit</p>
+
+          <h4>Sample code:</h4>
+          <code
+            >&lt;input type="submit" class="button-submit" value="Submit
+            Buttons"/&gt;</code
+          >
+
+          <h4>Rendered element:</h4>
+          <input type="submit" class="button-submit" value="Submit" />
+        </section>
+
+        <!-- RESET BUTTON FOR FORM -->
+        <section id="button_reset" class="element">
+          <h3>Reset Buttons</h3>
+
+          <h4>CSS selector:</h4>
+          <p>.button-reset</p>
+
+          <h4>Sample code:</h4>
+          <code
+            >&lt;input type="reset" class="button-reset" value="Reset
+            Buttons"/&gt;</code
+          >
+
+          <h4>Rendered element:</h4>
+          <input type="submit" class="button-reset" value="Reset" />
+        </section>
+
+        <!-- TEXT INPUT FIELD WITH LABEL -->
+        <section id="text_input_with_label" class="element">
+          <h3>Text Input Field with Label</h3>
+          <!-- Reference: https://www.w3schools.com/tags/tag_input.asp -->
+
+          <h4>CSS selector:</h4>
+          <p>
+            .label <br />
+            .input-text
+          </p>
+
+          <h4>Sample code:</h4>
+          <code
+            >&lt;label class="label" for="text_field"&gt;Label for Text Field:
+            &lt;/label&gt;</code
+          >
+          <code
+            >&lt;input class="input-text" id="text_field" type="text"&gt;</code
+          >
+
+          <h4>Rendered element:</h4>
+          <label class="label" for="text_field">Label for Text Field: </label>
+          <input class="input-text" id="text_field" type="text" />
+        </section>
+
+        <!-- RADIO BUTTON WITH LABEL -->
+        <section id="radio_button_with_label" class="element">
+          <h3>Radio Button with Label</h3>
+          <!-- Reference: https://www.w3schools.com/tags/att_input_type_radio.asp -->
+
+          <h4>CSS selector:</h4>
+          <p>
+            .label <br />
+            .radio-button
+          </p>
+
+          <h4>Sample code:</h4>
+          <code
+            >&lt;input type="radio" class="radio-button" id="radio-label"
+            value="LABEL"&gt;</code
+          >
+          <code
+            >&lt;label class="label"
+            for="radio-label"&gt;LABEL&lt;/label&gt;</code
+          >
+
+          <h4>Rendered element:</h4>
+          <input
+            type="radio"
+            class="radio-button"
+            id="radio-label"
+            value="LABEL"
+          />
+          <label class="label" for="radio-label">LABEL</label>
+          <br />
+          <input
+            type="radio"
+            class="radio-button"
+            id="radio-checked"
+            value="CHECKED"
+            checked
+          />
+          <label class="label" for="radio-checked">CHECKED</label>
+        </section>
+
+        <!-- IMAGE AS LINK -->
+        <section id="image_as_link" class="element">
+          <h3>Image as Link</h3>
+          <!-- Reference: https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_image -->
+
+          <h4>CSS selector:</h4>
+          <p>.image-as-link</p>
+          <p>.image-wrapper</p>
+
+          <h4>Sample code:</h4>
+          <code>&lt;a class="link-intext image-wrapper" href="#"&gt;</code>
+          <code
+            >&lt;img class="image-as-link" src="img/" alt="Image as
+            Link"&gt;</code
+          >
+          <code>&lt;/a&gt;</code>
+
+          <h4>Rendered element:</h4>
+          <a
+            href="https://unsplash.com/photos/pJnI0mhHwCU"
+            class="link-intext image-wrapper"
+            ><img
+              class="image-as-link"
+              src="img/unsplash.jpg"
+              alt="Image as Link"
+          /></a>
+        </section>
+      </section>
+      <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+      <!-- TEXT ELEMENTS SECTION // -->
+      <section id="text_elements">
+        <h2>Text Elements</h2>
+
+        <!-- FOUR LEVELS OF HEADINGS -->
+        <section id="headings" class="element">
+          <h3>Headings</h3>
+
+          <h4>CSS selector:</h4>
+          <p>
+            h1 <br />
+            h2 <br />
+            h3 <br />
+            h4
+          </p>
+
+          <h4>Sample code:</h4>
+          <code>&lt;h1&gt;H1 Heading&lt;/h1&gt;</code>
+          <code>&lt;h2&gt;H2 Heading&lt;/h2&gt;</code>
+          <code>&lt;h3&gt;H3 Heading&lt;/h3&gt;</code>
+          <code>&lt;h4&gt;H4 Heading&lt;/h4&gt;</code>
+
+          <h4>Rendered element:</h4>
+          <h1>H1 Heading</h1>
+          <h2>H2 Heading</h2>
+          <h3>H3 Heading</h3>
+          <h4>H4 Heading</h4>
+        </section>
+
+        <!-- PARAGRAPH -->
+        <section id="paragraph" class="element">
+          <h3>Paragraphs</h3>
+
+          <h4>CSS selector:</h4>
+          <p>p</p>
+
+          <h4>Sample code:</h4>
+          <code>&lt;p&gt;Content&lt;/p&gt;</code>
+
+          <h4>Rendered element:</h4>
+          <p>
+            The boy walked down the street in a carefree way, playing without
+            notice of what was about him. He didn't hear the sound of the car as
+            his ball careened into the road. He took a step toward it, and in
+            doing so sealed his fate. She looked at her student wondering if she
+            could ever get through. "You need to learn to think for yourself,"
+            she wanted to tell him. "Your friends are holding you back and
+            bringing you down." But she didn't because she knew his friends were
+            all that he had and even if that meant a life of misery, he would
+            never give them up.
+          </p>
+        </section>
+
+        <section id="number_list" class="element">
+          <h3>Numbered Lists</h3>
+
+          <h4>CSS selector:</h4>
+          <p>
+            ol <br />
+            li
+          </p>
+
+          <h4>Sample code:</h4>
+          <code>&lt;ol&gt;</code>
+          <code>&lt;li&gt;Content&lt;/li&gt;</code>
+          <code>&lt;/ol&gt;</code>
+
+          <ol>
+            <li>Sample1</li>
+            <li>Sample2</li>
+            <li>Sample3</li>
+          </ol>
+        </section>
+      </section>
+      <!-- // TEXT ELEMENTS SECTION -->
+
+      <!-- COMBINED ELEMENTS SECTION // -->
+      <section id="combined_elements">
+        <h2>Combined Elements</h2>
+
+        <!-- MAIN NAVIGATION -->
+        <section id="main_nav" class="element">
+          <h3>Main Navigation</h3>
+
+          <h4>CSS selector:</h4>
+          <p>.main-nav</p>
+          <p>.flex-nav</p>
+          <p>.flex-nav-item</p>
+
+          <h4>Sample code:</h4>
+          <code>&lt;nav class="main-nav flex-nav"&gt;</code>
+          <code
+            >&lt;a class="link-nav flex-nav-item"
+            href="#"&gt;Title1&lt;/a&gt;</code
+          >
+          <code
+            >&lt;a class="link-nav flex-nav-item"
+            href="#"&gt;Title2&lt;/a&gt;</code
+          >
+          <code
+            >&lt;a class="link-nav flex-nav-item"
+            href="#"&gt;Title3&lt;/a&gt;</code
+          >
+          <code>&lt;/nav&gt;</code>
+
+          <h4>Rendered element:</h4>
+          <nav class="main-nav flex-nav">
+            <a class="link-nav flex-nav-item" href="#main_nav">Homepage</a>
+            <a class="link-nav flex-nav-item" href="#main_nav">Cart</a>
+            <a class="link-nav flex-nav-item" href="#main_nav">Account</a>
+          </nav>
+        </section>
+
+        <!-- PRODUCT/SERVICE LISTING -->
+        <section id="product/service_listing" class="element">
+          <h3>Product/Service Listing</h3>
+
+          <h4>CSS selector:</h4>
+          <p>.listing</p>
+          <p>.product-info</p>
+          <p>.product-image</p>
+          <p>.flex-listing</p>
+          <p>.flex-listing-image</p>
+          <p>.flex-listing-item</p>
+
+          <h4>Sample code:</h4>
+          <code
+            >&lt;article id="product#" class="listing flex-listing"&gt;</code
+          >
+          <code>&lt;section class="product-image flex-listing-item"&gt;</code>
+          <code>&lt;a class="link-intext" href="#"&gt;</code>
+          <code
+            >&lt;img class="image-as-link" src="img/" alt="Image as
+            Link"&gt;</code
+          >
+          <code>&lt;/a&gt;</code>
+          <code>&lt;/section&gt;</code>
+          <code>&lt;section class="product-info flex-listing-item"&gt;</code>
+          <code>&lt;h3&gt;Product Name&lt;/h3&gt;</code>
+          <code>&lt;h4&gt;Price&lt;/h4&gt;</code>
+          <code>&lt;p&gt;Short Description&lt;/p&gt;</code>
+          <code
+            >&lt;a href="#" class="link-intext"&gt;Details Link&lt;/a&gt;</code
+          >
+          <code>&lt;/section&gt;</code>
+          <code>&lt;/article&gt;</code>
+
+          <h4>Rendered element:</h4>
+          <article id="Fasciated_haworthia" class="listing flex-listing">
+            <section class="product-image flex-listing-image">
+              <a
+                href="https://unsplash.com/photos/CchEuCkXvgs"
+                class="link-intext image-wrapper"
+                ><img
+                  class="image-as-link"
+                  src="img/Fasciated_haworthia.jpg"
+                  alt="Fasciated_haworthia"
+              /></a>
+            </section>
+
+            <section class="product-info flex-listing-item">
+              <h3>Fasciated Haworthia</h3>
+              <h4>Price: $19.99</h4>
+              <p>
+                This succulent is great for your indoor succulent garden. It has
+                thick, dark green leaves with white horizontal stripes on the
+                outside of the leaves. The inside of the leaves are smooth.
+              </p>
+              <a class="link-intext" href="">Details...</a>
+            </section>
+          </article>
+        </section>
+
+        <!-- PAYMENT FORM -->
+        <section id="payment_form" class="element">
+          <h3>Payment Form</h3>
+
+          <h4>CSS selector:</h4>
+          <p>.pay-form</p>
+          <p>.pay-info</p>
+
+          <h4>Sample code:</h4>
+          <code>&lt;article id="payment_form" class="pay-form"&gt;</code>
+          <code>&lt;h2&gt;Check Out&lt;/h2&gt;</code>
+          <code>&lt;p&gt;Statement&lt;/p&gt;</code>
+          <code>&lt;form class="pay-info"&gt;</code>
+          <code
+            >&lt;label class="label" for="text_field"&gt;Label for Text Field:
+            &lt;/label&gt;</code
+          >
+          <code
+            >&lt;input class="input-text" id="text_field" type="text"&gt;</code
+          >
+          <code
+            >&lt;input type="reset" class="button-reset" value="Reset
+            Buttons"/&gt;</code
+          >
+          <code
+            >&lt;input type="submit" class="button-submit" value="Submit
+            Buttons"/&gt;</code
+          >
+          <code>&lt;/form&gt;</code>
+          <code>&lt;/article&gt;</code>
+
+          <h4>Rendered element:</h4>
+          <article id="pay_form" class="pay-form">
+            <h2>Check Out</h2>
+            <p>
+              The boy walked down the street in a carefree way, playing without
+              notice of what was about him. He didn't hear the sound of the car
+              as his ball careened into the road. He took a step toward it, and
+              in doing so sealed his fate.
+            </p>
+            <form class="pay-info">
+              <label class="label" for="card">Card Number: </label>
+              <input class="input-text" id="card" type="text" />
+              <br />
+              <label class="label" for="fname">First Name: </label>
+              <input class="input-text" id="fname" type="text" />
+              <br />
+              <label class="label" for="lname">Last Name: </label>
+              <input class="input-text" id="lname" type="text" />
+              <br />
+              <label class="label" for="address">Address: </label>
+              <input class="input-text" id="address" type="text" />
+              <br />
+              <input type="submit" class="button-reset" value="Reset" />
+              <input type="submit" class="button-submit" value="Pay Now" />
+            </form>
+          </article>
+        </section>
+
+        <!-- CHECKOUT CART -->
+        <section class="element">
+          <h3>Checkout Cart</h3>
+
+          <h4>CSS selector:</h4>
+          <p>.cart</p>
+          <p>.cart-details</p>
+          <p>.cart-row</p>
+          <p>.cart-total</p>
+          <p>.flex-cart-details</p>
+          <p>.flex-cart-row</p>
+
+          <h4>Sample code:</h4>
+          <code>&lt;article id="checkout_cart" class="cart"&gt;</code>
+          <code>&lt;h2&gt;Cart&lt;/h2&gt;</code>
+          <code>&lt;section class="cart-details flex-cart-details"&gt;</code>
+
+          <code>&lt;table&gt;</code>
+          <code>&lt;tr&gt;</code>
+          <code>&lt;th&gt;Products&lt;/th&gt;</code>
+          <code>&lt;th&gt;Price&lt;/th&gt;</code
+          ><code>&lt;th&gt;Amount&lt;/th&gt;</code>
+          <code>&lt;th&gt;Total&lt;/th&gt;</code>
+          <code>&lt;/tr&gt;</code>
+
+          <code>&lt;tr&gt;</code>
+          <code>
+            &lt;td&gt; &lt;a href="" class="link-intext image-wrapper"&gt;
+            &lt;imgclass="image-as-link" src="" alt=""&gt; &lt;/a&gt;&lt;br
+            /&gt;Fasciated Haworthia&lt;/td&gt;
+          </code>
+          <code>&lt;td&gt;$19.99/each&lt;/td&gt;</code
+          ><code>&lt;td&gt;1&lt;/td&gt;</code>
+          <code>&lt;td&gt;$19.99&lt;/td&gt;</code>
+          <code>&lt;/tr&gt;</code>
+
+          <code>&lt;tr&gt;</code>
+          <code>&lt;th&gt;&lt;/th&gt;</code>
+          <code>&lt;th&gt;&lt;/th&gt;</code
+          ><code>&lt;th&gt;Total&lt;/th&gt;</code>
+          <code>&lt;th&gt;$19.99&lt;/th&gt;</code>
+          <code>&lt;/tr&gt;</code>
+          <code>&lt;/table&gt;</code>
+          <code>&lt;/section&gt;</code>
+
+          <code>&lt;a class="link-intext" href="#"&gt;Check Out&lt;/a&gt;</code>
+          <code>&lt;/article&gt;</code>
+
+          <h4>Rendered element:</h4>
+          <article id="checkout_cart" class="cart">
+            <h2>Cart</h2>
+            <section class="cart-details flex-cart-details">
+              <table>
+                <tr>
+                  <th>Products</th>
+                  <th>Price</th>
+                  <th>Amount</th>
+                  <th>Total</th>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://unsplash.com/photos/CchEuCkXvgs"
+                      class="link-intext image-wrapper"
+                      ><img
+                        class="image-as-link"
+                        src="img/Fasciated_haworthia.jpg"
+                        alt="Fasciated_haworthia"
+                    /></a>
+                    <br />
+                    Fasciated Haworthia
+                  </td>
+                  <td>$19.99/each</td>
+                  <td>1</td>
+                  <td>$19.99</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://unsplash.com/photos/r-kG_nvpvLA"
+                      class="link-intext image-wrapper"
+                      ><img
+                        class="image-as-link"
+                        src="img/Dracaena_trifasciata.jpg"
+                        alt="Dracaena trifasciata"
+                    /></a>
+                    <br />
+                    Dracaena Trifasciata
+                  </td>
+                  <td>$23.99/each</td>
+                  <td>1</td>
+                  <td>$23.99</td>
+                </tr>
+                <tr>
+                  <th></th>
+                  <th></th>
+                  <th>Total</th>
+                  <th>$43.98</th>
+                </tr>
+              </table>
+            </section>
+
+            <a class="link-intext" href="#pay_form">Check Out</a>
+          </article>
+        </section>
+      </section>
+      <!-- // COMBINED ELEMENTS SECTION -->
+
+      <!-- BRANDING IDEAS -->
+      <section id="branding">
+        <h2>Branding Ideas</h2>
+
+        <section class="element">
+          <h3>Company Overview</h3>
+          <p>
+            "Evergreen" is an online company that mainly sells plants such as
+            succulents and bonsai. It provides knowledge and tips on plant care
+            and holds regular online sharing sessions on plant care tips. The
+            company's goal is to build a plant-centered community and attract
+            more young people to have plant companions.
+          </p>
+        </section>
+
+        <section class="element">
+          <h3>Potential Customers</h3>
+          <p>
+            Potential customers will be young people who want to add small
+            plants in the room but do not have the corresponding knowledge and
+            experience.
+          </p>
+          <p><strong>Quick Personas</strong></p>
+          <p><strong>Bruce</strong>(22, Male, Student)</p>
+          <p>
+            <strong>About</strong> <br />
+            - Bruce is a third-year student who is busy studying all day. <br />
+            - He lives alone in an apartment with a cat for company. <br />
+            - He is very experienced in taking care of pets but not plants.<br />
+          </p>
+          <p>
+            <strong>Goals</strong> <br />
+            - Bruce wanted to make the apartment more cozy.<br />
+            - He hopes to learn about caring for plants and try his hand at
+            growing them. <br />
+          </p>
+          <p>
+            <strong>Pain Points</strong> <br />
+            - Bruce can't find a suitable place to buy succulents because the
+            local plant stores are far away from him.<br />
+            - He fails to find a way to systematically learn to care for plants.
+            <br />
+            - He doesn't find the right community to exchange ideas about caring
+            for plants. <br />
+          </p>
+        </section>
+
+        <section class="element">
+          <h3>Competitiveness</h3>
+          <p>
+            Compared with other websites that sell plants online, "Evergreen"
+            not only provides the option to buy plants, but also provides
+            customers with sufficient knowledge and skills on caring for plants.
+            <br />
+            "Evergreen" pays more attention to the whole process of customers
+            from purchasing plants to taking care of plants than other
+            companies. It is better than any other company at keeping in touch
+            with customers after their purchases are over.
+          </p>
+        </section>
+      </section>
+
+      <!-- BRAND COMPONENTS -->
+      <section id="brand-components">
+        <h2>Brand Components</h2>
+
+        <section id="fonts" class="element">
+          <h3>Fonts: Transat Text</h3>
+          <h4>Samples:</h4>
+          <h1>Heading 1</h1>
+          <h2>Heading 2</h2>
+          <h3>Heading 3</h3>
+          <h4>Heading 4</h4>
+          <p>Paragraph</p>
+          <p>
+            Designed by
+            <a
+              class="link-intext"
+              href="https://fonts.adobe.com/designers/greg-shutters"
+              >Greg Shutters</a
+            >
+            From
+            <a
+              class="link-intext"
+              href="https://fonts.adobe.com/foundries/typetanic"
+              >Typetanic</a
+            >
+            <br />
+            Access and use via
+            <a
+              class="link-intext"
+              href="https://fonts.adobe.com/fonts/transat-text"
+              >Adobe Fonts</a
+            >
+          </p>
+        </section>
+
+        <section id="colour_palettes" class="element">
+          <h3>Colour Palettes</h3>
+          <div class="bgp"></div>
+          Primary: #0a6d36 <br />
+          <div class="bgpc"></div>
+          Primary-container: #9ef6b0 <br />
+          <div class="bgpco"></div>
+          On-primary-container: #00210b <br />
+
+          <div class="bgs"></div>
+          Secondary: #506352 <br />
+          <div class="bgsc"></div>
+          Secondary-container: #d3e8d2 <br />
+          <div class="bgsco"></div>
+          On-secondary-container: #0e1f12 <br />
+
+          <div class="bgt"></div>
+          Tertiary: #3a656e <br />
+          <div class="bgto"></div>
+          On-tertiary: #ffffff <br />
+          <div class="bgtc"></div>
+          Tertiary-container: #bdeaf5 <br />
+          <div class="bgtco"></div>
+          On-tertiary-container: #001f25 <br />
+
+          <div class="bge"></div>
+          Error: #ba1a1a <br />
+          <div class="bgec"></div>
+          Error-container: #ffdad6 <br />
+          <div class="bgeco"></div>
+          On-error-container: #410002 <br />
+
+          <div class="bg"></div>
+          Background: #fcfdf7 <br />
+          <div class="bgo"></div>
+          On-background: #191c19 <br />
+
+          <div class="bgsur"></div>
+          Surface-variant: #dde5da <br />
+          <div class="bgsuro"></div>
+          On-surface-variant: #414941 <br />
+          <div class="bgout"></div>
+          Outline: #717970 <br />
+          <p>
+            Tools used:
+            <a
+              class="link-intext"
+              href="https://color.adobe.com/zh/create/color-wheel"
+              >Adobe Color Wheel</a
+            >
+            ,
+            <a
+              class="link-intext"
+              href="https://m3.material.io/theme-builder#/custom"
+              >Material Theme Builder</a
+            >
+          </p>
+        </section>
+
+        <section id="art_direction" class="element">
+          <h3>Potential imagery / Art Direction</h3>
+
+          <p>
+            The main art direction is to use flat illustrations for icons and
+            minimalist plant photos for product images. (The following pictures
+            are just samples and will not be used in the actual website)
+          </p>
+
+          <a
+            href="https://stock.adobe.com/ca/images/tree-painting-set-indoor-and-outdoor-landscape-garden-potted-plants-isolated-on-white-vector-set-green-plant-in-the-pot/366068726?prev_url=detail"
+            class="link-intext"
+            ><img
+              class="image-as-link"
+              src="img/flat.jpg"
+              alt="Plant Flat Illustrations"
+          /></a>
+
+          <a href="https://unsplash.com/photos/T0inbt7nRME" class="link-intext"
+            ><img
+              class="image-as-link"
+              src="img/succulent.jpg"
+              alt="Succulent Photo"
+          /></a>
+        </section>
+      </section>
+
+      <section id="citations">
+        <h2>Citations</h2>
+
+        <ul>
+          <li>
+            Shutters, Greg. Font Designer. 2013.
+            <strong>Transat Text [Font]</strong>. Retrieved from
+            <a href="https://fonts.adobe.com/fonts/transat-text"
+              >https://fonts.adobe.com/fonts/transat-text</a
+            >.
+          </li>
+          <li>
+            Auchara. Contributor. (null).
+            <strong>Tree painting Set [Illustration]</strong>. Retrieved from
+            <a
+              href="https://stock.adobe.com/ca/images/tree-painting-set-indoor-and-outdoor-landscape-garden-potted-plants-isolated-on-white-vector-set-green-plant-in-the-pot/366068726?prev_url=detail"
+              >https://stock.adobe.com/ca/images/tree-painting-set-indoor-and-outdoor-landscape-garden-potted-plants-isolated-on-white-vector-set-green-plant-in-the-pot/366068726?prev_url=detail</a
+            >.
+          </li>
+          <li>
+            Harvey, Stephanie. Photographer. 2017.
+            <strong>Aloe vera in white pot [Photo]</strong>. Retrieved from
+            <a href="https://unsplash.com/photos/T0inbt7nRME"
+              >https://unsplash.com/photos/T0inbt7nRME</a
+            >.
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>

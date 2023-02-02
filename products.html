@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<!-- Yenan Huang (301416586) -->
+<!-- P-1 Product Listing page -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>P01 - Product Listing</title>
+
+    <!-- Normalize.css file downloaded from https://necolas.github.io/normalize.css/ -->
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
+    <link href="css/flexbox.css" rel="stylesheet" />
+    <!-- Font css file generated using Adobe Font -->
+    <link rel="stylesheet" href="https://use.typekit.net/vkt6nof.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Products</h1>
+      <div class="image-wrapper">
+        <img src="img/evergreen.png" alt="evergreen_logo" class="top-logo" />
+      </div>
+    </header>
+
+    <section class="nav-bar">
+      <nav class="main-nav flex-nav">
+        <a class="link-nav flex-nav-item" href="index.html">Style Guide</a>
+        <a class="link-nav flex-nav-item" href="products.html">Products</a>
+        <a class="link-nav flex-nav-item" href="checkout.html">Checkout</a>
+      </nav>
+
+      <nav class="sub-nav flex-nav">
+        <a class="link-nav flex-nav-item" href="#recommend">Recommend</a>
+        <a class="link-nav flex-nav-item" href="#all">All Products</a>
+        <a class="link-nav flex-nav-item" href="#citations">Citations</a>
+      </nav>
+    </section>
+
+    <main id="products">
+      <section id="recommend">
+        <h2>Recommendation</h2>
+        <article id="Aloe_vera" class="main-listing flex-listing">
+          <section class="product-image flex-listing-image">
+            <a href="https://unsplash.com/photos/nU9U66FMutc" class="link-intext image-wrapper"
+              ><img class="image-as-link" src="img/aloe.jpg" alt="Aloe_vera"
+            /></a>
+          </section>
+
+          <section class="product-info flex-listing-item">
+            <h3>Aloe Vera</h3>
+            <h4>Price: $16.99</h4>
+            <p>
+              Aloe vera is a succulent plant species of the genus Aloe. The plant is stemless or very short-stemmed with
+              thick, greenish, fleshy leaves that fan out from the plant’s central stem. The margin of the leaf is
+              serrated with small teeth.
+            </p>
+            <a class="link-intext" href="">Details...</a>
+          </section>
+        </article>
+      </section>
+
+      <section id="all">
+        <h2>All</h2>
+        <article id="Fasciated_haworthia" class="listing flex-listing">
+          <section class="product-image flex-listing-image">
+            <a href="https://unsplash.com/photos/CchEuCkXvgs" class="link-intext image-wrapper"
+              ><img class="image-as-link" src="img/Fasciated_haworthia.jpg" alt="Fasciated_haworthia"
+            /></a>
+          </section>
+
+          <section class="product-info flex-listing-item">
+            <h3>Fasciated Haworthia</h3>
+            <h4>Price: $19.99</h4>
+            <p>
+              This succulent is great for your indoor succulent garden. It has thick, dark green leaves with white
+              horizontal stripes on the outside of the leaves. The inside of the leaves are smooth.
+            </p>
+            <a class="link-intext" href="">Details...</a>
+          </section>
+        </article>
+
+        <article id="Dracaena_trifasciata" class="listing flex-listing">
+          <section class="product-image flex-listing-image">
+            <a href="https://unsplash.com/photos/r-kG_nvpvLA" class="link-intext image-wrapper"
+              ><img class="image-as-link" src="img/Dracaena_trifasciata.jpg" alt="Dracaena trifasciata"
+            /></a>
+          </section>
+
+          <section class="product-info flex-listing-item">
+            <h3>Dracaena trifasciata</h3>
+            <h4>Price: $23.99</h4>
+            <p>
+              Dracaena trifasciata is a species of flowering plant in the family Asparagaceae, native to tropical West
+              Africa from Nigeria east to the Congo. It is most commonly known as the snake plant, Saint George's sword,
+              mother-in-law's tongue, and viper's bowstring hemp, among other names.
+            </p>
+            <a class="link-intext" href="">Details...</a>
+          </section>
+        </article>
+      </section>
+
+      <section id="citations">
+        <h2>Citations</h2>
+
+        <ul>
+          <li>
+            Shutters, Greg. Font Designer. 2013.
+            <strong>Transat Text [Font]</strong>. Retrieved from
+            <a href="https://fonts.adobe.com/fonts/transat-text">https://fonts.adobe.com/fonts/transat-text</a>.
+          </li>
+          <li>
+            Feey. (2021).
+            <strong>Hands holding a Dracaena fragrans [Photo]</strong>. Retrieved from
+            <a href="https://unsplash.com/photos/r-kG_nvpvLA">https://unsplash.com/photos/r-kG_nvpvLA</a>.
+          </li>
+          <li>
+            Feey. (2021).
+            <strong>Man holding up two Aloe vera plants in a white pot [Photo]</strong>. Retrieved from
+            <a href="https://unsplash.com/photos/nU9U66FMutc">https://unsplash.com/photos/nU9U66FMutc</a>.
+          </li>
+          <li>
+            Lyzhova, Nataliia. Photographer. 2021.
+            <strong>Haworthia limifolia variegata [Photo]</strong>. Retrieved from
+            <a href="https://unsplash.com/photos/CchEuCkXvgs">https://unsplash.com/photos/CchEuCkXvgs</a>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>

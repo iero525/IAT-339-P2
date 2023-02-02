@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!-- Yenan Huang (301416586) -->
+<!-- P-1 Product Listing page -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>P01 - Checkout</title>
+
+    <!-- Normalize.css file downloaded from https://necolas.github.io/normalize.css/ -->
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
+    <link href="css/flexbox.css" rel="stylesheet" />
+    <!-- Font css file generated using Adobe Font -->
+    <link rel="stylesheet" href="https://use.typekit.net/vkt6nof.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Checkout</h1>
+      <div class="image-wrapper">
+        <img src="img/evergreen.png" alt="evergreen_logo" class="top-logo" />
+      </div>
+    </header>
+
+    <section class="nav-bar">
+      <nav class="main-nav flex-nav">
+        <a class="link-nav flex-nav-item" href="index.html">Style Guide</a>
+        <a class="link-nav flex-nav-item" href="products.html">Products</a>
+        <a class="link-nav flex-nav-item" href="checkout.html">Checkout</a>
+      </nav>
+
+      <nav class="sub-nav flex-nav">
+        <a class="link-nav flex-nav-item" href="#cart">Cart</a>
+        <a class="link-nav flex-nav-item" href="#payment">Pay</a>
+      </nav>
+    </section>
+
+    <main id="checkout">
+      <article id="checkout_cart" class="cart">
+        <h2>Cart</h2>
+        <section class="cart-details flex-cart-details">
+          <table>
+            <tr>
+              <th>Products</th>
+              <th>Price</th>
+              <th>Amount</th>
+              <th>Total</th>
+            </tr>
+            <tr>
+              <td>
+                <a
+                  href="https://unsplash.com/photos/CchEuCkXvgs"
+                  class="link-intext image-wrapper"
+                  ><img
+                    class="image-as-link"
+                    src="img/Fasciated_haworthia.jpg"
+                    alt="Fasciated_haworthia"
+                /></a>
+                <br />
+                Fasciated Haworthia
+              </td>
+              <td>$19.99/each</td>
+              <td>1</td>
+              <td>$19.99</td>
+            </tr>
+            <tr>
+              <td>
+                <a
+                  href="https://unsplash.com/photos/r-kG_nvpvLA"
+                  class="link-intext image-wrapper"
+                  ><img
+                    class="image-as-link"
+                    src="img/Dracaena_trifasciata.jpg"
+                    alt="Dracaena trifasciata"
+                /></a>
+                <br />
+                Dracaena Trifasciata
+              </td>
+              <td>$23.99/each</td>
+              <td>1</td>
+              <td>$23.99</td>
+            </tr>
+            <tr>
+              <th></th>
+              <th></th>
+              <th>Total</th>
+              <th>$43.98</th>
+            </tr>
+          </table>
+        </section>
+
+        <a class="link-intext" href="#pay_form">Check Out</a>
+      </article>
+
+      <article id="pay_form" class="pay-form">
+        <h2>Payment Information</h2>
+        <p>
+          Scammers are targeting individuals by text message or email, claiming
+          that the CRA is sending them a GST/HST tax refund or credit, and are
+          requesting personal information to proceed. Do not click any links,
+          reply or send any personal or financial information.
+        </p>
+        <form class="pay-info">
+          <label class="label" for="card">Card Number: </label>
+          <input class="input-text" id="card" type="text" />
+          <br />
+          <label class="label" for="fname">First Name: </label>
+          <input class="input-text" id="fname" type="text" />
+          <br />
+          <label class="label" for="lname">Last Name: </label>
+          <input class="input-text" id="lname" type="text" />
+          <br />
+          <label class="label" for="address">Address: </label>
+          <input class="input-text" id="address" type="text" />
+          <br />
+          <input type="submit" class="button-reset" value="Reset" />
+          <input type="submit" class="button-submit" value="Pay Now" />
+        </form>
+      </article>
+    </main>
+  </body>
+</html>
