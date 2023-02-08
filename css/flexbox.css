@@ -73,17 +73,19 @@ header {
   justify-content: space-around;
 }
 
-/* .flex-listing-image {
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-}
+.flex-media {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
 
-.flex-listing-item {
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-} */
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+
+  -webkit-justify-content: space-around;
+  -ms-justify-content: space-around;
+  justify-content: space-around;
+}
 
 @media (max-width: 50rem) {
   .flex-listing {
