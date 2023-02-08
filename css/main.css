@@ -128,7 +128,9 @@ outline: #717970;
 Root -------------------
 */
 body {
-  font-family: transat-text, sans-serif;
+  font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-style: normal;
   color: #191c19;
   background-color: #fcfdf7;
   min-width: 400px;
