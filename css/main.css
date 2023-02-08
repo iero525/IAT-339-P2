@@ -278,6 +278,7 @@ Images -------------------
   border-style: none;
   width: 100vw;
   height: 33vh;
+  padding-top: 2rem;
   object-fit: cover;
 }
 
@@ -461,13 +462,11 @@ End of Inputs -------------------
   position: absolute;
   background-color: #fcfdf7;
   text-align: left;
-
-  padding-top: 0.5rem;
+  padding-top: 3.5rem;
   padding-bottom: 0.5rem;
   padding-left: 2rem;
   padding-right: 1rem;
-
-  top: 2rem;
+  top: 6rem;
   right: 0rem;
 }
 
@@ -747,6 +746,10 @@ main#home {
 .best-seller .product-image{
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
+}
+
+.new-event{
+  padding-top: 4rem;
 }
 
 #new-events.image-wide img {
