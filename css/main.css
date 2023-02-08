@@ -265,6 +265,15 @@ Images -------------------
   margin: 0;
 }
 
+.product-image-wide{
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  text-align: center;
+  margin: 0;
+}
 .image-wide img {
   border-style: none;
   width: 100vw;
