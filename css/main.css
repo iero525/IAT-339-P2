@@ -37,7 +37,7 @@ body {
 
 header,
 main {
-  padding: 2rem;
+  padding: 0rem;
 }
 
 header h1{
@@ -629,4 +629,83 @@ COMBINED ELEMENTS -------------------
   main {
     width: 95%;
   }
+}
+
+/* HOME PAGE */
+/* New Arrival Image */
+main#home {
+  width: 90%;
+  margin: 0 auto;
+}
+.intro-background{
+  width:100%;
+  max-width:1920px;
+  min-width:320px;
+  margin: -10px;;
+}
+
+.intro-img-background{
+  background-size: cover;
+  position:relative;
+  max-width: 2560px;
+  margin: 0;
+}
+
+intro-img-background figcaption{
+  position:absolute;
+  font-size: 3.8rem;
+
+  padding-top: 0.5rem;
+  padding-bottom:0.5rem;
+  padding-left:2rem;
+  padding-right:1rem;
+
+  bottom:14rem;
+  left:0;
+  text-align:center;
+
+  background-color:rgba(0,0,0,0.75);
+  transition: background-color 0.25s;
+
+}
+
+.intro-items-wrapper{
+
+  width:100%;
+  max-width:1920px;
+  min-width:320px;
+  margin:0;
+}
+
+.intro-img-background{
+  background-size: cover;
+  position:relative;
+  max-width: 2560px;
+  margin: 0;
+}
+
+.intro-img-background figcaption{
+  position:absolute;
+  font-size: 3.8rem;
+
+  padding-top: 0.5rem;
+  padding-bottom:0.5rem;
+  padding-left:2rem;
+  padding-right:1rem;
+
+  bottom:14rem;
+  left:14rem;
+
+  text-align: right;
+  color:#ffffff;
+  background-color:#3A656E;
+  transition: background-color 0.25s;
+
+}
+
+/* BEST SELLERS */
+.best-seller-title{
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 2rem;
 }
