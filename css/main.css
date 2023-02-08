@@ -27,7 +27,106 @@ on-surface-variant: #414941;
 outline: #717970;
 */
 
-/* All pages */
+/* Color Pallete */
+.bgp,
+.bgpc,
+.bgpco,
+.bgs,
+.bgsc,
+.bgsco,
+.bgt,
+.bgto,
+.bgtc,
+.bgtco,
+.bge,
+.bgec,
+.bgeco,
+.bg,
+.bgo,
+.bgsur,
+.bgsuro,
+.bgout {
+  display: inline-block;
+  width: 3rem;
+  height: 1rem;
+  margin-right: 0.5rem;
+}
+
+.bgp {
+  background-color: #0a6d36;
+}
+
+.bgpc {
+  background-color: #9ef6b0;
+}
+
+.bgpco {
+  background-color: #00210b;
+}
+
+.bgs {
+  background-color: #506352;
+}
+
+.bgsc {
+  background-color: #d3e8d2;
+}
+
+.bgsco {
+  background-color: #0e1f12;
+}
+
+.bgt {
+  background-color: #3a656e;
+}
+
+.bgto {
+  background-color: #ffffff;
+}
+
+.bgtc {
+  background-color: #bdeaf5;
+}
+
+.bgtco {
+  background-color: #001f25;
+}
+
+.bge {
+  background-color: #ba1a1a;
+}
+
+.bgec {
+  background-color: #ffdad6;
+}
+
+.bgeco {
+  background-color: #410002;
+}
+
+.bg {
+  background-color: #fcfdf7;
+}
+
+.bgo {
+  background-color: #191c19;
+}
+
+.bgsur {
+  background-color: #dde5da;
+}
+
+.bgsuro {
+  background-color: #414941;
+}
+
+.bgout {
+  background-color: #717970;
+}
+
+/*
+Root -------------------
+*/
 body {
   font-family: transat-text, sans-serif;
   color: #191c19;
@@ -35,12 +134,45 @@ body {
   min-width: 400px;
 }
 
-header,
-main {
+/* HEADINGS */
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+h3 {
+  font-style: italic;
+  margin-top: 1rem;
+}
+
+h4 {
+  margin-bottom: 0.25rem;
+}
+
+/* PARAGRAPH */
+p {
+  margin-top: 0.5rem;
+  max-width: 45rem;
+  line-height: 1.44rem;
+}
+
+/* List */
+ol {
+  line-height: 1.5rem;
+}
+
+li::marker {
+  color: #0a6d36;
+  font-style: italic;
+}
+
+/* Header */
+header {
   padding: 0rem;
 }
 
-header h1{
+header h1 {
   margin: auto 0;
   padding: 0;
 }
@@ -51,27 +183,14 @@ header .top-logo {
   object-fit: cover;
 }
 
+/* Main */
 main {
   width: 50%;
   margin: 0 auto;
+  padding: 0;
 }
 
-/* Style Guide Page */
-.element {
-  padding-top: 0.5rem;
-  padding-bottom: 1.5rem;
-  border-top-width: 0.1rem;
-  border-top-style: solid;
-  border-top-color: #717970;
-}
-
-#interactive_elements,
-#text_elements,
-#combined_elements,
-#branding {
-  margin-top: 5rem;
-}
-
+/* Code */
 code {
   font-family: transat-text, sans-serif;
   background-color: #dde5da;
@@ -80,21 +199,65 @@ code {
   display: block;
 }
 
-/* Product Page */
-main#products {
-  width: 90%;
-  margin: 0 auto;
+/* Element Block */
+.element {
+  padding-top: 0.5rem;
+  padding-bottom: 1.5rem;
+  border-top-width: 0.1rem;
+  border-top-style: solid;
+  border-top-color: #717970;
 }
-
-/* Checkout Page */
-main#checkout .cart{
-  margin-bottom: 10vh;
-}
-
 /*
-INTERACTIVE ELEMENTS -------------------
+End of Root -------------------
 */
 
+/*
+Images -------------------
+*/
+/* Image Wrapper */
+.image-wrapper {
+  display: inline-block;
+  overflow: hidden;
+}
+
+/* Wide Image */
+.image-wide {
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  margin: 0;
+}
+
+.image-wide img {
+  border-style: none;
+  width: 100vw;
+  height: 30vh;
+  object-fit: cover;
+}
+
+/* Image as link */
+.image-as-link img {
+  /* Reference: https://stackoverflow.com/questions/12991351/css-force-image-resize-and-keep-aspect-ratio */
+  border-style: none;
+  border-radius: 1rem;
+  width: 37vmin;
+  height: 37vmin;
+  object-fit: cover;
+  transition: 0.5s;
+}
+
+.image-as-link img:hover {
+  -webkit-filter: grayscale(0.5);
+  filter: grayscale(0.5);
+  transform: scale(1.35);
+}
+/*
+End of Images -------------------
+*/
+
+/*
+Links -------------------
+*/
 /* IN-TEXT LINK */
 .link-intext {
   text-decoration: none;
@@ -130,7 +293,13 @@ INTERACTIVE ELEMENTS -------------------
   background-color: #506352;
   color: #ffffff;
 }
+/*
+End of Links -------------------
+*/
 
+/*
+Buttons -------------------
+*/
 /* SUBMIT BUTTON FOR FORM */
 .button-submit {
   margin: 0.75rem 2rem;
@@ -175,6 +344,40 @@ INTERACTIVE ELEMENTS -------------------
   color: #ffffff;
 }
 
+/* LARGE BUTTON */
+.button-large {
+  text-decoration: none;
+
+  position: absolute;
+  font-size: 3.8rem;
+
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 1rem;
+
+  bottom: 2rem;
+  right: 0rem;
+
+  text-align: right;
+  color: #ffffff;
+  background-color: #3a656e;
+  transition: 0.5s;
+}
+
+.button-large:hover,
+.button-large:active,
+.button-large:focus {
+  background-color: #bdeaf5;
+  color: #001f25;
+}
+/*
+End of Buttons -------------------
+*/
+
+/*
+Inputs -------------------
+*/
 /* TEXT INPUT FIELD WITH LABEL */
 .label {
   font-style: italic;
@@ -204,64 +407,9 @@ INTERACTIVE ELEMENTS -------------------
   margin-top: 0.75rem;
   accent-color: #0a6d36;
 }
-
-/* IMAGE AS LINK */
-.image-as-link {
-  /* Reference: https://stackoverflow.com/questions/12991351/css-force-image-resize-and-keep-aspect-ratio */
-  border-style: none;
-  border-radius: 1rem;
-  width: 37vmin;
-  height: 37vmin;
-  object-fit: cover;
-  transition: 0.5s;
-}
-
-.image-wrapper {
-  display: inline-block;
-  overflow: hidden;
-  border-radius: 1rem;
-}
-
-.image-as-link:hover {
-  -webkit-filter: grayscale(0.5);
-  filter: grayscale(0.5);
-  transform: scale(1.35);
-}
-
 /*
-TEXT ELEMENTS -------------------
+End of Inputs -------------------
 */
-
-/* FOUR LEVELS OF HEADINGS */
-h1,
-h2 {
-  color: #0a6d36;
-}
-
-h3 {
-  font-style: italic;
-  margin-top: 1rem;
-}
-
-h4 {
-  margin-bottom: 0.25rem;
-}
-
-/* PARAGRAPH */
-p {
-  margin-top: 0.5rem;
-  max-width: 45rem;
-  line-height: 1.44rem;
-}
-
-ol {
-  line-height: 1.5rem;
-}
-
-li::marker {
-  color: #0a6d36;
-  font-style: italic;
-}
 
 /*
 COMBINED ELEMENTS -------------------
@@ -477,113 +625,54 @@ COMBINED ELEMENTS -------------------
   width: 7vmin;
   height: 7vmin;
 }
+/*
+END OF COMBINED ELEMENTS -------------------
+*/
 
-/* Color Pallete */
-.bgp,
-.bgpc,
-.bgpco,
-.bgs,
-.bgsc,
-.bgsco,
-.bgt,
-.bgto,
-.bgtc,
-.bgtco,
-.bge,
-.bgec,
-.bgeco,
-.bg,
-.bgo,
-.bgsur,
-.bgsuro,
-.bgout {
-  display: inline-block;
-  width: 3rem;
-  height: 1rem;
-  margin-right: 0.5rem;
+/*
+Specific Pages -------------------
+*/
+/* Style Guide Page */
+#interactive_elements,
+#text_elements,
+#combined_elements,
+#branding {
+  margin-top: 5rem;
 }
 
-.bgp {
-  background-color: #0a6d36;
+/* Product Page */
+main#products {
+  width: 90%;
+  margin: 0 auto;
 }
 
-.bgpc {
-  background-color: #9ef6b0;
+/* Checkout Page */
+main#checkout .cart {
+  margin-bottom: 10vh;
 }
 
-.bgpco {
-  background-color: #00210b;
+/* HOME PAGE */
+main#home {
+  width: 100%;
+  margin: 0 auto;
 }
 
-.bgs {
-  background-color: #506352;
+/* BEST SELLERS */
+#best-seller-listings {
+  padding-top: 2rem;
 }
-
-.bgsc {
-  background-color: #d3e8d2;
-}
-
-.bgsco {
-  background-color: #0e1f12;
-}
-
-.bgt {
-  background-color: #3a656e;
-}
-
-.bgto {
-  background-color: #ffffff;
-}
-
-.bgtc {
-  background-color: #bdeaf5;
-}
-
-.bgtco {
-  background-color: #001f25;
-}
-
-.bge {
-  background-color: #ba1a1a;
-}
-
-.bgec {
-  background-color: #ffdad6;
-}
-
-.bgeco {
-  background-color: #410002;
-}
-
-.bg {
-  background-color: #fcfdf7;
-}
-
-.bgo {
-  background-color: #191c19;
-}
-
-.bgsur {
-  background-color: #dde5da;
-}
-
-.bgsuro {
-  background-color: #414941;
-}
-
-.bgout {
-  background-color: #717970;
-}
+/*
+End of Specific Pages -------------------
+*/
 
 /* @media */
-@media (max-width: 106.25rem){
+@media (max-width: 106.25rem) {
   .main-listing .image-as-link,
   .image-as-link {
     width: 50vmin;
     height: 50vmin;
   }
 }
-
 
 @media (max-width: 75rem) {
   main {
@@ -629,83 +718,4 @@ COMBINED ELEMENTS -------------------
   main {
     width: 95%;
   }
-}
-
-/* HOME PAGE */
-/* New Arrival Image */
-main#home {
-  width: 90%;
-  margin: 0 auto;
-}
-.intro-background{
-  width:100%;
-  max-width:1920px;
-  min-width:320px;
-  margin: -10px;;
-}
-
-.intro-img-background{
-  background-size: cover;
-  position:relative;
-  max-width: 2560px;
-  margin: 0;
-}
-
-intro-img-background figcaption{
-  position:absolute;
-  font-size: 3.8rem;
-
-  padding-top: 0.5rem;
-  padding-bottom:0.5rem;
-  padding-left:2rem;
-  padding-right:1rem;
-
-  bottom:14rem;
-  left:0;
-  text-align:center;
-
-  background-color:rgba(0,0,0,0.75);
-  transition: background-color 0.25s;
-
-}
-
-.intro-items-wrapper{
-
-  width:100%;
-  max-width:1920px;
-  min-width:320px;
-  margin:0;
-}
-
-.intro-img-background{
-  background-size: cover;
-  position:relative;
-  max-width: 2560px;
-  margin: 0;
-}
-
-.intro-img-background figcaption{
-  position:absolute;
-  font-size: 3.8rem;
-
-  padding-top: 0.5rem;
-  padding-bottom:0.5rem;
-  padding-left:2rem;
-  padding-right:1rem;
-
-  bottom:14rem;
-  left:14rem;
-
-  text-align: right;
-  color:#ffffff;
-  background-color:#3A656E;
-  transition: background-color 0.25s;
-
-}
-
-/* BEST SELLERS */
-.best-seller-title{
-  font-size: 2rem;
-  text-align: center;
-  padding-top: 2rem;
 }
