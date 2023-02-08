@@ -211,6 +211,39 @@ code {
   border-top-style: solid;
   border-top-color: #717970;
 }
+
+/* Footer */
+footer {
+  text-align: center;
+  border-top-style: solid;
+  border-top-width: 0.1rem;
+  border-top-color: #717970;
+  margin: 0 auto;
+  margin-top: 2rem;
+  width: 90%;
+  height: 10vh;
+}
+
+footer p {
+  max-width: none;
+}
+
+footer .image-as-link {
+  width: 80%;
+  margin: 1.25rem auto;
+}
+
+footer .image-as-link img {
+  width: 1.5rem;
+  height: auto;
+}
+
+footer .image-as-link img:hover {
+  -webkit-filter: none;
+  filter: none;
+  transform: none;
+}
+
 /*
 End of Root -------------------
 */
@@ -243,7 +276,6 @@ Images -------------------
 .image-as-link img {
   /* Reference: https://stackoverflow.com/questions/12991351/css-force-image-resize-and-keep-aspect-ratio */
   border-style: none;
-  border-radius: 1rem;
   width: 37vmin;
   height: 37vmin;
   object-fit: cover;
@@ -674,7 +706,7 @@ main#checkout .cart {
 /* HOME PAGE */
 main#home {
   width: 100%;
-  margin: 0 auto;
+  margin: 0;
 }
 
 #best-seller-listings {
