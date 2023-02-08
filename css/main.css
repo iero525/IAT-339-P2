@@ -703,21 +703,48 @@ main#checkout .cart {
   margin-bottom: 10vh;
 }
 
-/* HOME PAGE */
+/* START OF HOME PAGE */
 main#home {
   width: 100%;
   margin: 0;
 }
 
-#best-seller-listings {
+#home.best-seller {
   /* BEST SELLERS */
   padding-top: 2rem;
+  padding-bottom: 4rem;
+  max-width:70rem;
+  position:relative;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+}
+
+/* Create 3 equal columns that floats next to each other */
+.best-seller-listings {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  padding-bottom: 4rem;
+  height: 300px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.best-seller .product-image{
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 #new-events.image-wide img {
   /* NEW EVENTS */
   height: 50vh;
 }
+/* END OF HOME PAGE */
 /*
 End of Specific Pages -------------------
 */
