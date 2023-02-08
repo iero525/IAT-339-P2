@@ -141,6 +141,10 @@ h1 {
   font-weight: 400;
 }
 
+h2 {
+  font-weight: 400;
+}
+
 h3 {
   font-style: italic;
   margin-top: 1rem;
@@ -231,7 +235,7 @@ Images -------------------
 .image-wide img {
   border-style: none;
   width: 100vw;
-  height: 30vh;
+  height: 33vh;
   object-fit: cover;
 }
 
@@ -411,10 +415,24 @@ Inputs -------------------
 End of Inputs -------------------
 */
 
+/* INFORMATION BLOCK */
+.info-block {
+  position: absolute;
+  background-color: #fcfdf7;
+  text-align: left;
+
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 1rem;
+
+  top: 2rem;
+  right: 0rem;
+}
+
 /*
 COMBINED ELEMENTS -------------------
 */
-
 /* MAIN NAVIGATION */
 .nav-bar {
   z-index: 1;
@@ -426,25 +444,27 @@ COMBINED ELEMENTS -------------------
   max-width: 100%;
   text-align: center;
   margin: 0 auto;
-  background-color: #506352;
+  background-color: #fcfdf7;
+  padding-bottom: 0.75rem;
 }
 
 .main-nav .link-nav {
   text-decoration: none;
   display: inline-block;
   font-size: 1.17rem;
-  background-color: #506352;
-  color: #ffffff;
+  background-color: #fcfdf7;
+  color: #191c19;
   padding: 0.75rem 1rem;
   border-radius: 0rem;
-  transition: 0.5s;
+  transition: 0.2s;
 }
 
 .main-nav .link-nav:active,
 .main-nav .link-nav:hover,
 .main-nav .link-nav:focus {
-  background-color: #d3e8d2;
-  color: #00210b;
+  border-bottom-style: solid;
+  border-bottom-color: #0a6d36;
+  border-bottom-width: 0.2rem;
 }
 
 .sub-nav {
@@ -657,9 +677,14 @@ main#home {
   margin: 0 auto;
 }
 
-/* BEST SELLERS */
 #best-seller-listings {
+  /* BEST SELLERS */
   padding-top: 2rem;
+}
+
+#new-events.image-wide img {
+  /* NEW EVENTS */
+  height: 50vh;
 }
 /*
 End of Specific Pages -------------------
