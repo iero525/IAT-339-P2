@@ -870,7 +870,7 @@ End of Specific Pages -------------------
 */
 
 /* @media */
-@media (max-width: 106.25rem) {
+/* @media (max-width: 106.25rem) {
   .main-listing .image-as-link,
   .image-as-link {
     width: 50vmin;
@@ -926,4 +926,4 @@ End of Specific Pages -------------------
   main {
     width: 95%;
   }
-}
+} */
