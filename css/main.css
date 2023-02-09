@@ -768,7 +768,7 @@ main#home {
 }
 
 /* Product Name Size */
-#best-seller-listings figcaption {
+#best-seller-listings a {
   font-size: 1.17rem;
 }
 
