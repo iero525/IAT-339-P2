@@ -787,7 +787,7 @@ main#home {
 }
 /* END OF HOME PAGE */
 
-/* About Page */
+/* ABOUT PAGE */
 #company-intro.image-wide img {
   height: 60vh;
 }
@@ -798,8 +798,29 @@ main#home {
 }
 
 #company-info.info-block {
-  top: 20%;
+  top: 30%;
+  padding-right: 5rem;
+  padding-left: 3rem;
 }
+
+#partner p {
+  text-align: center;
+  margin: 1rem auto;
+  margin-bottom: 4rem;
+}
+
+#partner-list {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#partner-list img {
+  width: auto;
+  height: 20vh;
+  margin: 1rem;
+}
+/* END OF ABOUT PAGE */
 
 /*
 End of Specific Pages -------------------
