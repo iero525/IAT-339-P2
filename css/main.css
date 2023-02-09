@@ -827,22 +827,26 @@ main#home {
 input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
-  border: 1px solid #ffffff;
+  border: 1px solid #cecdcd;
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 7px;
 }
 
 input[type=submit] {
-  background-color: #04AA6D;
+  background-color: #3A656E;
   color: white;
-  padding: 12px 20px;
+  padding: 12px 150px;
   border: none;
   cursor: pointer;
+  border-radius: 7px;
 }
 
 input[type=submit]:hover {
-  background-color: #45a049;
+  background-color: #4eb656;
 }
 
 /* Style the container/contact section */
