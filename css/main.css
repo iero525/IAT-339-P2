@@ -303,7 +303,7 @@ Images -------------------
 }
 
 /* Logo */
-.logo img{
+.logo img {
   width: 15.084rem;
   height: 4.996rem;
   object-fit: cover;
@@ -347,6 +347,12 @@ Links -------------------
 .link-nav:active,
 .link-nav:hover,
 .link-nav:focus {
+  border-bottom-style: solid;
+  border-bottom-color: #0a6d36;
+  border-bottom-width: 0.2rem;
+}
+
+.active-nav {
   border-bottom-style: solid;
   border-bottom-color: #0a6d36;
   border-bottom-width: 0.2rem;
@@ -693,7 +699,7 @@ Specific Pages -------------------
   margin-top: 5rem;
 }
 
-main#style-guide{
+main#style-guide {
   width: 50%;
   margin: 0 auto;
 }
@@ -782,16 +788,16 @@ main#home {
 /* END OF HOME PAGE */
 
 /* About Page */
-#company-intro.image-wide img{
+#company-intro.image-wide img {
   height: 60vh;
 }
 
-#company-intro.image-wide .logo img{
+#company-intro.image-wide .logo img {
   height: 4.996rem;
   padding-top: 0;
 }
 
-#company-info.info-block{
+#company-info.info-block {
   top: 20%;
 }
 
