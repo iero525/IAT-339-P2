@@ -128,9 +128,9 @@ outline: #717970;
 Root -------------------
 */
 body {
-  font-family: 'Montserrat', sans-serif;
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  font-style: normal;
   color: #191c19;
   background-color: #fcfdf7;
   min-width: 400px;
@@ -191,7 +191,7 @@ header .top-logo {
 
 /* Main */
 main {
-  width: 50%;
+  width: 100%;
   margin: 0 auto;
   padding: 0;
 }
@@ -267,13 +267,13 @@ Images -------------------
   margin: 0;
 }
 
-.product-image-wide{
+.product-image-wide {
   background-size: cover;
   position: relative;
   width: 100%;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
-  font-size: 2.5rem; ;
+  font-size: 2.5rem;
   font-weight: 00;
   text-align: center;
   margin: 0;
@@ -300,6 +300,13 @@ Images -------------------
   -webkit-filter: grayscale(0.5);
   filter: grayscale(0.5);
   transform: scale(1.35);
+}
+
+/* Logo */
+.logo img{
+  width: 15.084rem;
+  height: 4.996rem;
+  object-fit: cover;
 }
 /*
 End of Images -------------------
@@ -467,8 +474,8 @@ End of Inputs -------------------
   position: absolute;
   background-color: #fcfdf7;
   text-align: left;
-  padding-top: 3.5rem;
-  padding-bottom: 0.5rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
   padding-left: 2rem;
   padding-right: 1rem;
   top: 6rem;
@@ -686,6 +693,11 @@ Specific Pages -------------------
   margin-top: 5rem;
 }
 
+main#style-guide{
+  width: 50%;
+  margin: 0 auto;
+}
+
 /* Product Page */
 main#products {
   width: 90%;
@@ -707,8 +719,8 @@ main#home {
   /* BEST SELLERS */
   padding-top: 2rem;
   padding-bottom: 4rem;
-  max-width:70rem;
-  position:relative;
+  max-width: 70rem;
+  position: relative;
   margin: 0 auto;
   margin-bottom: 3rem;
 }
@@ -729,7 +741,7 @@ main#home {
   clear: both;
 }
 
-#home.best-seller .best-seller-image{
+#home.best-seller .best-seller-image {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
@@ -750,16 +762,16 @@ main#home {
 }
 
 /* Product Name Size */
-#best-seller-listings figcaption{
+#best-seller-listings figcaption {
   font-size: 1.17rem;
 }
 
 /* Add Top Margin to Section */
-#best-seller{
+#best-seller {
   margin-top: 4rem;
 }
 
-.new-event{
+.new-event {
   padding-top: 4rem;
 }
 
@@ -768,6 +780,21 @@ main#home {
   height: 50vh;
 }
 /* END OF HOME PAGE */
+
+/* About Page */
+#company-intro.image-wide img{
+  height: 60vh;
+}
+
+#company-intro.image-wide .logo img{
+  height: 4.996rem;
+  padding-top: 0;
+}
+
+#company-info.info-block{
+  top: 20%;
+}
+
 /*
 End of Specific Pages -------------------
 */
