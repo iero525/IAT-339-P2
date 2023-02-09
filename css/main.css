@@ -330,18 +330,19 @@ Links -------------------
   text-decoration: none;
   display: inline-block;
   font-size: 1.17rem;
-  background-color: #d3e8d2;
-  color: #00210b;
+  background-color: #fcfdf7;
+  color: #191c19;
   padding: 0.75rem 1rem;
-  border-radius: 1rem;
-  transition: 0.5s;
+  border-radius: 0rem;
+  transition: 0.2s;
 }
 
 .link-nav:active,
 .link-nav:hover,
 .link-nav:focus {
-  background-color: #506352;
-  color: #ffffff;
+  border-bottom-style: solid;
+  border-bottom-color: #0a6d36;
+  border-bottom-width: 0.2rem;
 }
 /*
 End of Links -------------------
@@ -354,44 +355,44 @@ Buttons -------------------
 .button-submit {
   margin: 0.75rem 2rem;
   font-size: 1.17rem;
-  background-color: #bdeaf5;
-  color: #001f25;
+  font-weight: 300;
+  background-color: #3a656e;
+  color: #ffffff;
   border-width: 0.1rem;
   border-style: solid;
-  border-color: #bdeaf5;
+  border-color: #3a656e;
   padding: 0.25rem 1rem;
-  border-radius: 1rem;
   transition: 0.5s;
 }
 
 .button-submit:active,
 .button-submit:hover,
 .button-submit:focus {
-  border-color: #3a656e;
-  background-color: #3a656e;
-  color: #ffffff;
+  border-color: #bdeaf5;
+  background-color: #bdeaf5;
+  color: #001f25;
 }
 
 /* RESET BUTTON FOR FORM */
 .button-reset {
   margin: 0.75rem 2rem;
   font-size: 1.17rem;
+  font-weight: 300;
   background-color: transparent;
   color: #191c19;
   border-width: 0.1rem;
   border-style: solid;
-  border-color: #717970;
+  border-color: #3a656e;
   padding: 0.25rem 1rem;
-  border-radius: 1rem;
   transition: 0.5s;
 }
 
 .button-reset:active,
 .button-reset:hover,
 .button-reset:focus {
-  border-color: #3a656e;
-  background-color: #3a656e;
-  color: #ffffff;
+  border-color: #bdeaf5;
+  background-color: #bdeaf5;
+  color: #001f25;
 }
 
 /* LARGE BUTTON */
@@ -435,13 +436,13 @@ Inputs -------------------
 
 .input-text {
   margin-bottom: 0.75rem;
-  background-color: #fcfdf7;
+  background-color: transparent;
   color: #0e1f12;
-  border-radius: 1rem;
-  border: #717970;
+  border: #3a656e;
   border-style: solid;
   border-width: 0.1rem;
   padding: 0.25rem 0.75rem;
+  transition: 0.1s;
 }
 
 .input-text:active,
@@ -490,25 +491,6 @@ COMBINED ELEMENTS -------------------
   margin: 0 auto;
   background-color: #fcfdf7;
   padding-bottom: 0.75rem;
-}
-
-.main-nav .link-nav {
-  text-decoration: none;
-  display: inline-block;
-  font-size: 1.17rem;
-  background-color: #fcfdf7;
-  color: #191c19;
-  padding: 0.75rem 1rem;
-  border-radius: 0rem;
-  transition: 0.2s;
-}
-
-.main-nav .link-nav:active,
-.main-nav .link-nav:hover,
-.main-nav .link-nav:focus {
-  border-bottom-style: solid;
-  border-bottom-color: #0a6d36;
-  border-bottom-width: 0.2rem;
 }
 
 .sub-nav {
@@ -683,7 +665,7 @@ COMBINED ELEMENTS -------------------
   transition: 0.5s;
 }
 
-.cart .image-as-link {
+.cart .image-as-link img {
   max-width: 7rem;
   max-height: 7rem;
   width: 7vmin;
@@ -767,6 +749,15 @@ main#home {
   clear: both;
 }
 
+/* Product Name Size */
+#best-seller-listings figcaption{
+  font-size: 1.17rem;
+}
+
+/* Add Top Margin to Section */
+#best-seller{
+  margin-top: 4rem;
+}
 
 .new-event{
   padding-top: 4rem;
