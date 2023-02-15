@@ -290,8 +290,8 @@ Images -------------------
 .image-as-link img {
   /* Reference: https://stackoverflow.com/questions/12991351/css-force-image-resize-and-keep-aspect-ratio */
   border-style: none;
-  width: 37vmin;
-  height: 37vmin;
+  width: 50vmin;
+  height: 50vmin;
   object-fit: cover;
   transition: 0.5s;
 }
@@ -660,7 +660,7 @@ COMBINED ELEMENTS -------------------
   font-style: italic;
 }
 
-.cart table td{
+.cart table td {
   border-bottom-style: solid;
   border-bottom-color: #717970;
   border-bottom-width: 0.1rem;
@@ -687,7 +687,7 @@ COMBINED ELEMENTS -------------------
   transition: 0.5s;
 }
 
-.cart .image-wrapper{
+.cart .image-wrapper {
   border-radius: 10px;
 }
 
@@ -893,6 +893,25 @@ End of Specific Pages -------------------
 */
 
 /* @media */
-/* 800px */
-@media only screen and (max-width: 50rem) {
+/* 1000px */
+@media only screen and (max-width: 1000px) {
+  .listing:nth-of-type(even) .product-image,
+  .main-listing .product-image {
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .listing:nth-of-type(odd) .product-image {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  #products .main-listing,
+  .listing:nth-of-type(even) {
+    margin: 5rem auto;
+  }
+
+  .listing:nth-of-type(odd) {
+    margin: 5rem auto;
+  }
 }
