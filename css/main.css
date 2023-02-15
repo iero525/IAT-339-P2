@@ -569,33 +569,33 @@ COMBINED ELEMENTS -------------------
   margin: 1rem;
 }
 
-.listing:nth-of-type(even) .product-image,
+.listing:nth-of-type(odd) .product-image,
 .main-listing .product-image {
   margin-right: 2rem;
   text-align: center;
 }
 
-.listing:nth-of-type(odd) .product-image {
+.listing:nth-of-type(even) .product-image {
   margin-left: 2rem;
   text-align: center;
 }
 
 #products .main-listing,
-.listing:nth-of-type(even) {
+.listing:nth-of-type(odd) {
   margin-left: 0rem;
   margin-right: auto;
   margin-top: 5rem;
   margin-bottom: 5rem;
 }
 
-.listing:nth-of-type(odd) {
+.listing:nth-of-type(even) {
   margin-left: auto;
   margin-right: 0rem;
   margin-top: 5rem;
   margin-bottom: 5rem;
 }
 
-.listing:nth-of-type(odd) .product-image {
+.listing:nth-of-type(even) .product-image {
   order: 2;
 }
 
@@ -873,6 +873,46 @@ input[type="submit"]:hover {
   padding: 10px;
 }
 
+/* DETAILS PAGE */
+#details .image-wide img {
+  height: 80vh;
+}
+
+#details p,
+#details h4 {
+  margin: 0 auto;
+  max-width: 50%;
+  text-align: left;
+}
+
+#description {
+  padding-top: 3rem;
+}
+
+#reviews {
+  padding-top: 3rem;
+}
+
+#reviews .review {
+  margin: 2rem auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  width: 50%;
+  border-left-style: solid;
+  border-left-color: #717970;
+  border-left-width: 0.2rem;
+}
+
+#reviews .review h4,
+#reviews .review p {
+  margin: 0;
+  margin-bottom: 0.25rem;
+  max-width: 100%;
+}
+/* END OF DETAILS PAGE */
+
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .column,
@@ -886,6 +926,12 @@ input[type="submit"]:hover {
     padding-bottom: 3vmin;
     padding-left: 3vw;
     padding-right: 3vw;
+  }
+
+  #reviews .review,
+  #details p,
+  #details h4 {
+    max-width: 90%;
   }
 }
 /*
@@ -913,5 +959,11 @@ End of Specific Pages -------------------
 
   .listing:nth-of-type(odd) {
     margin: 5rem auto;
+  }
+
+  #reviews .review,
+  #details p,
+  #details h4 {
+    max-width: 70%;
   }
 }
