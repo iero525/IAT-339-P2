@@ -133,7 +133,7 @@ body {
   font-style: normal;
   color: #191c19;
   background-color: #fcfdf7;
-  min-width: 400px;
+  min-width: 375px;
 }
 
 /* HEADINGS */
@@ -366,7 +366,6 @@ Buttons -------------------
 */
 /* SUBMIT BUTTON FOR FORM */
 .button-submit {
-  margin: 0.75rem 2rem;
   font-size: 1.17rem;
   font-weight: 300;
   background-color: #3a656e;
@@ -388,7 +387,6 @@ Buttons -------------------
 
 /* RESET BUTTON FOR FORM */
 .button-reset {
-  margin: 0.75rem 2rem;
   font-size: 1.17rem;
   font-weight: 300;
   background-color: transparent;
@@ -631,7 +629,7 @@ COMBINED ELEMENTS -------------------
   width: fit-content;
   margin: 0 auto;
   margin-top: 2rem;
-  text-align: right;
+  text-align: left;
 }
 
 .pay-info .button-submit,
@@ -641,6 +639,8 @@ COMBINED ELEMENTS -------------------
 
 /* CHECKOUT CART */
 .cart {
+  padding: 1rem 3rem;
+  padding-top: 5vmin;
   width: 100%;
   margin: 0 auto;
   text-align: center;
@@ -652,16 +652,26 @@ COMBINED ELEMENTS -------------------
 }
 
 .cart table {
-  width: 100%;
+  width: fit-content;
+  border-spacing: 0;
 }
 
 .cart table tr th {
   font-style: italic;
 }
 
+.cart table td{
+  border-bottom-style: solid;
+  border-bottom-color: #717970;
+  border-bottom-width: 0.1rem;
+}
+
 .cart table th,
 .cart table td {
-  padding-bottom: 2rem;
+  padding-bottom: 3vmin;
+  padding-top: 3vmin;
+  padding-left: 5vw;
+  padding-right: 5vw;
 }
 
 .cart-total {
@@ -677,11 +687,16 @@ COMBINED ELEMENTS -------------------
   transition: 0.5s;
 }
 
+.cart .image-wrapper{
+  border-radius: 10px;
+}
+
 .cart .image-as-link img {
-  max-width: 7rem;
-  max-height: 7rem;
-  width: 7vmin;
-  height: 7vmin;
+  max-width: 15rem;
+  max-height: 15rem;
+  width: 7vw;
+  height: 7vw;
+  border-radius: 10px;
 }
 /*
 END OF COMBINED ELEMENTS -------------------
@@ -816,7 +831,7 @@ main#home {
 
 #partner-list img {
   width: auto;
-  height: 20vh;
+  height: 20vmin;
   margin: 1rem;
 }
 /* END OF ABOUT PAGE */
@@ -827,7 +842,7 @@ input[type="text"],
 select,
 textarea {
   width: 100%;
-  padding: 12px;
+  padding: 0.75vm;
   border: 1px solid #cecdcd;
   margin-top: 6px;
   margin-bottom: 16px;
@@ -840,14 +855,15 @@ textarea {
 input[type="submit"] {
   background-color: #3a656e;
   color: white;
-  padding: 12px 150px;
+  padding: 1vmin 10vmin;
   border: none;
   cursor: pointer;
   border-radius: 7px;
 }
 
 input[type="submit"]:hover {
-  background-color: #4eb656;
+  background-color: #bdeaf5;
+  color: #001f25;
 }
 
 /* Style the container/contact section */
@@ -863,6 +879,13 @@ input[type="submit"]:hover {
   input[type="submit"] {
     width: 100%;
     margin-top: 0;
+  }
+
+  .cart table th,
+  .cart table td {
+    padding-bottom: 3vmin;
+    padding-left: 3vw;
+    padding-right: 3vw;
   }
 }
 /*
