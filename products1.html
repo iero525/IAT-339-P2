@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Evergreen - Home</title>
@@ -9,9 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
 
     <!-- Normalize.css file downloaded from https://necolas.github.io/normalize.css/ -->
     <link href="css/normalize.css" rel="stylesheet" />
@@ -19,113 +19,145 @@
     <link href="css/flexbox.css" rel="stylesheet" />
     <!-- Font css file generated using Adobe Font -->
     <link rel="stylesheet" href="https://use.typekit.net/vkt6nof.css" />
-  </head>
+</head>
 
-  <body>
+<body>
     <header>
-      <div class="image-wrapper">
-        <img src="img/evergreen.png" alt="evergreen_logo" class="top-logo" />
-      </div>
+        <div class="image-wrapper">
+            <img src="img/evergreen.png" alt="evergreen_logo" class="top-logo" />
+        </div>
     </header>
 
     <section class="nav-bar">
-      <nav class="main-nav flex-nav">
-        <a class="link-nav flex-nav-item" href="index.html">Style Guide</a>
-        <a class="link-nav flex-nav-item active-nav" href="home.html">Home</a>
-        <a class="link-nav flex-nav-item" href="contact.html">Contact</a>
-        <a class="link-nav flex-nav-item" href="about.html">About</a>
-        <a class="link-nav flex-nav-item" href="products.html">Products</a>
-        <a class="link-nav flex-nav-item" href="products1.html">Products 1</a>
-        <a class="link-nav flex-nav-item" href="checkout.html">Checkout</a>
-      </nav>
+        <nav class="main-nav flex-nav">
+            <a class="link-nav flex-nav-item" href="index.html">Style Guide</a>
+            <a class="link-nav flex-nav-item active-nav" href="home.html">Home</a>
+            <a class="link-nav flex-nav-item" href="contact.html">Contact</a>
+            <a class="link-nav flex-nav-item" href="about.html">About</a>
+            <a class="link-nav flex-nav-item" href="products.html">Products</a>
+            <a class="link-nav flex-nav-item" href="products1.html">Products 1</a>
+            <a class="link-nav flex-nav-item" href="checkout.html">Checkout</a>
+        </nav>
     </section>
 
     <main id="home">
-      <section id="intro-background" class="image-wide image-wrapper">
-        <img src="img/New_arrivals.png" alt="Landing Intro" />
-        <a class="button-large" href="products.html">SHOP NEW ARRIVALS</a>
-      </section>
-
-      <!-- Start of Best Seller -->
-      <section id="best-seller">
-        <!-- Title -->
-        <h1>BEST SELLERS</h1>
-        <!-- Best Selling Listing -->
-        <!-- 3 columns -->
-
-        <section
-          id="best-seller-listings"
-          class="product-image-wide image-wrapper"
-        >
-          <div class="row">
-            <div class="column">
-              <img src="img/succulent.png" alt="product1" width="594" />
-              <a class="best-seller-image">ALOE VERA</a>
-            </div>
-            <div class="column">
-              <img src="img/succulent_1.png" alt="product2" width="594" />
-              <a class="best-seller-image">
-                DRACAENA TRIRASCIATA
-              </a>
-            </div>
-            <div class="column">
-              <img src="img/succulent_2.png" alt="product3" width="594" />
-              <a class="best-seller-image">
-                FASCIATED HAWORTHIA
-              </a>
-            </div>
-          </div>
-          <h1>BEST SELLERS</h1>
-          <div class="row">
-            <div class="column">
-              <img src="img/succulent.png" alt="product1" width="594" />
-              <a class="best-seller-image">ALOE VERA</a>
-            </div>
-            <div class="column">
-              <img src="img/succulent_1.png" alt="product2" width="594" />
-              <a class="best-seller-image">
-                DRACAENA TRIRASCIATA
-              </a>
-            </div>
-            <div class="column">
-              <img src="img/succulent_2.png" alt="product3" width="594" />
-              <a class="best-seller-image">
-                FASCIATED HAWORTHIA
-              </a>
-            </div>
-          </div>
+        <section id="intro-background" class="image-wide image-wrapper">
+            <img src="img/New_arrivals.png" alt="Landing Intro" />
+            <a class="button-large" href="products.html">SHOP NEW ARRIVALS</a>
         </section>
-              </section>
+
+        <!-- Start of Best Seller -->
+        <section id="best-seller">
+            <!-- Title -->
+            <h1>BEST SELLERS</h1>
+            <!-- Best Selling Listing -->
+            <!-- 3 columns -->
+
+            <section id="best-seller-listings" class="product-image-wide image-wrapper">
+                <div class="container-best-sellers">
+                    <div class="column-best-sellers">
+                        <a href="details_aloe.html">
+                            <img src="img/succulent.png" alt="product1" /></a>
+                        <h1>ALOE VERA</h1>
+                        <div style="column-count: 2;">
+                            <p style="font-size: 1.17rem;">79 REVIEWS</p>
+                            <p style="font-size: 1.17rem;">$19.99</p>
+                        </div>
+                    </div>
+                    <div class="column-best-sellers">
+                        <img src="img/succulent_1.png" alt="product2" />
+                        <h1>DRACAENA TRIRASCIATA</h1>
+                        <div style="column-count: 2;">
+                            <p style="font-size: 1.17rem;">120 REVIEWS</p>
+                            <p style="font-size: 1.17rem;">$23.99</p>
+                        </div>
+                    </div>
+                    <div class="column-best-sellers">
+                        <img src="img/succulent_2.png" alt="product3" />
+                        <h1>FASCIATED HAWORTHIA</h1>
+                        <div style="column-count: 2;">
+                            <p style="font-size: 1.17rem;">56 REVIEWS</p>
+                            <p style="font-size: 1.17rem;">$12.99</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h1>PLANTS</h1>
+                <div class="container-best-sellers">
+                    <div class="column-best-sellers">
+                        <a href="details_aloe.html">
+                            <img src="img/succulent.png" alt="product1" /></a>
+                        <h1>ALOE VERA</h1>
+                        <div style="column-count: 2;">
+                            <p style="font-size: 1.17rem;">79 REVIEWS</p>
+                            <p style="font-size: 1.17rem;">$19.99</p>
+                        </div>
+                    </div>
+                    <div class="column-best-sellers">
+                        <img src="img/succulent_1.png" alt="product2" />
+                        <h1>DRACAENA TRIRASCIATA</h1>
+                        <div style="column-count: 2;">
+                            <p style="font-size: 1.17rem;">120 REVIEWS</p>
+                            <p style="font-size: 1.17rem;">$23.99</p>
+                        </div>
+                    </div>
+                    <div class="column-best-sellers">
+                        <img src="img/succulent_2.png" alt="product3" />
+                        <h1>FASCIATED HAWORTHIA</h1>
+                        <div style="column-count: 2;">
+                            <p style="font-size: 1.17rem;">56 REVIEWS</p>
+                            <p style="font-size: 1.17rem;">$12.99</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h1>FURNITURE</h1>
+                <div class="container-best-sellers">
+                    <div class="column-best-sellers">
+                        <img src="img/tarva.png" alt="product4" />
+                        <h1>TARVA</h1>
+                        <div style="column-count: 2;">
+                            <p style="font-size: 1.17rem;">13 REVIEWS</p>
+                            <p style="font-size: 1.17rem;">$329.99</p>
+                        </div>
+                    </div>
+
+                    <div class="column-best-sellers">
+                        <img src="img/etta.png" alt="product5" />
+                        <h1>ETTA</h1>
+                        <div style="column-count: 2;">
+                            <p style="font-size: 1.17rem;">13REVIEWS</p>
+                            <p style="font-size: 1.17rem;">$214.49</p>
+                        </div>
+                    </div>
+                    <div class="column-best-sellers">
+                        <img src="img/TROPICAL PLANT.png" alt="product6" />
+                        <h1>TROPICAL PLANT</h1>
+                        <div style="column-count: 2;">
+                            <p style="font-size: 1.17rem;">13 REVIEWS</p>
+                            <p style="font-size: 1.17rem;">$119.29</p>
+                        </div>
+                    </div>
+                </div>    
+            </section>
+        </section>
     </main>
 
     <footer>
-      <section id="media" class="image-as-link image-wrapper flex-media">
-        <a
-          href="https://www.flaticon.com/free-icons/youtube"
-          class="link-intext"
-          ><img
-            src="img/logo-youtube.png"
-            alt="Youtube icons created by Freepik - Flaticon"
-        /></a>
-        <a
-          href="https://www.flaticon.com/free-icons/instagram"
-          class="link-intext"
-          ><img
-            src="img/logo-instagram.png"
-            alt="Instagram icons created by edt.im - Flaticon"
-        /></a>
-        <a
-          href="https://www.flaticon.com/free-icons/pinterest-logo"
-          class="link-intext"
-          ><img
-            src="img/logo-pinterest.png"
-            alt="Pinterest logo icons created by Hight Quality Icons - Flaticon"
-        /></a>
-      </section>
-      <p>
-        Copyright © 2023 Yenan Huang & Mike Chu IAT 339 D101 Spring 2023. All
-        Rights Reserved.
-      </p>
+        <section id="media" class="image-as-link image-wrapper flex-media">
+            <a href="https://www.flaticon.com/free-icons/youtube" class="link-intext"><img src="img/logo-youtube.png"
+                    alt="Youtube icons created by Freepik - Flaticon" /></a>
+            <a href="https://www.flaticon.com/free-icons/instagram" class="link-intext"><img
+                    src="img/logo-instagram.png" alt="Instagram icons created by edt.im - Flaticon" /></a>
+            <a href="https://www.flaticon.com/free-icons/pinterest-logo" class="link-intext"><img
+                    src="img/logo-pinterest.png"
+                    alt="Pinterest logo icons created by Hight Quality Icons - Flaticon" /></a>
+        </section>
+        <p>
+            Copyright © 2023 Yenan Huang & Mike Chu IAT 339 D101 Spring 2023. All
+            Rights Reserved.
+        </p>
     </footer>
-  </body>
+</body>
+
 </html>
