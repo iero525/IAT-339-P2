@@ -719,7 +719,7 @@ main#style-guide {
 }
 
 /* Product Page */
-main#products {
+main#products #citations{
   width: 90%;
   margin: 0 auto;
 }
@@ -733,6 +733,10 @@ main#checkout .cart {
 main#home {
   width: 100%;
   margin: 0;
+}
+
+main#home #products{
+  margin-top: 5rem;
 }
 
 #home.best-seller {
@@ -926,6 +930,21 @@ input[type="submit"]:hover {
   margin-bottom: 0.25rem;
   max-width: 100%;
 }
+
+#reviews #comments{
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+#reviews #comments textarea#comment{
+  height: 10rem;
+}
+
+#reviews #comments input{
+  transition: 0.3s;
+}
 /* END OF DETAILS PAGE */
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
@@ -958,12 +977,12 @@ End of Specific Pages -------------------
 @media only screen and (max-width: 1000px) {
   .listing:nth-of-type(even) .product-image,
   .main-listing .product-image {
-    margin-right: 0;
+    margin-left: 0;
     text-align: center;
   }
 
   .listing:nth-of-type(odd) .product-image {
-    margin-left: 0;
+    margin-right: 0;
     text-align: center;
   }
 
