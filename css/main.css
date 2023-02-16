@@ -754,16 +754,23 @@ main#home {
   height: 300px;
 }
 
-/* Clear floats after the columns */
-#home.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+
+
 
 #home.best-seller .best-seller-image {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
+}
+
+.container-best-sellers {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column-best-sellers {
+  flex: 1 1 0;
+  margin: 10px;
+  text-align: center;
 }
 
 /* Create three equal columns that floats next to each other */
@@ -774,6 +781,7 @@ main#home {
   height: 800px; /* Should be removed. Only for demonstration */
 }
 
+
 /* Clear floats after the columns */
 .row:after {
   content: "";
@@ -781,9 +789,15 @@ main#home {
   clear: both;
 }
 
+.column2 {
+  float: left;
+  width: 25%;
+  margin-top:0.5rem /* Should be removed. Only for demonstration */
+}
+
 /* Product Name Size */
 #best-seller-listings a {
-  font-size: 1.17rem;
+  font-size: 3rem;
 }
 
 /* Add Top Margin to Section */
@@ -826,6 +840,7 @@ main#home {
 #partner-list {
   width: 80%;
   margin: 0 auto;
+  background-color: white;
   text-align: center;
 }
 
