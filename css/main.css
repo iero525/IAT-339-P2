@@ -296,7 +296,9 @@ Images -------------------
   transition: 0.5s;
 }
 
-.image-as-link img:hover {
+.image-as-link img:hover,
+.image-as-link img:active,
+.image-as-link img:focus {
   -webkit-filter: grayscale(0.5);
   filter: grayscale(0.5);
   transform: scale(1.35);
@@ -719,7 +721,7 @@ main#style-guide {
 }
 
 /* Product Page */
-main#products #citations{
+main#products #citations {
   width: 90%;
   margin: 0 auto;
 }
@@ -735,7 +737,7 @@ main#home {
   margin: 0;
 }
 
-main#home #products{
+main#home #products {
   margin-top: 5rem;
 }
 
@@ -758,9 +760,6 @@ main#home #products{
   height: 300px;
 }
 
-
-
-
 #home.best-seller .best-seller-image {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
@@ -777,6 +776,24 @@ main#home #products{
   text-align: center;
 }
 
+.column-best-sellers .image-wrapper{
+  width: 30vw;
+  height: 30vw;
+}
+
+.column-best-sellers .image-wrapper img {
+  width: 30vw;
+  transition: 0.3s;
+}
+
+.column-best-sellers .image-wrapper img:hover,
+.column-best-sellers .image-wrapper img:focus,
+.column-best-sellers .image-wrapper img:active {
+  -webkit-filter: grayscale(0.5);
+  filter: grayscale(0.5);
+  transform: scale(1.35);
+}
+
 /* Create three equal columns that floats next to each other */
 .column {
   float: left;
@@ -784,7 +801,6 @@ main#home #products{
   padding: 10px;
   height: 800px; /* Should be removed. Only for demonstration */
 }
-
 
 /* Clear floats after the columns */
 .row:after {
@@ -796,7 +812,7 @@ main#home #products{
 .column2 {
   float: left;
   width: 25%;
-  margin-top:0.5rem /* Should be removed. Only for demonstration */
+  margin-top: 0.5rem; /* Should be removed. Only for demonstration */
 }
 
 /* Product Name Size */
@@ -931,18 +947,18 @@ input[type="submit"]:hover {
   max-width: 100%;
 }
 
-#reviews #comments{
+#reviews #comments {
   width: 50%;
   margin: 0 auto;
   text-align: center;
   margin-top: 3rem;
 }
 
-#reviews #comments textarea#comment{
+#reviews #comments textarea#comment {
   height: 10rem;
 }
 
-#reviews #comments input{
+#reviews #comments input {
   transition: 0.3s;
 }
 /* END OF DETAILS PAGE */
