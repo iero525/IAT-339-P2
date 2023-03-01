@@ -246,6 +246,11 @@ footer .image-as-link img:hover {
   transform: none;
 }
 
+a { text-decoration: none; color:rgb(0, 0, 0); }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:focus { text-decoration: none; }
+a:hover, a:active { text-decoration: none; }
 /*
 End of Root -------------------
 */
@@ -313,6 +318,34 @@ Images -------------------
 /*
 End of Images -------------------
 */
+footer {
+
+  padding: 20px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-icons a {
+  color: #000000;
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.social-icons a:hover {
+  color: #00ff73;
+}
+
+p {
+  font-size: 14px;
+  color: #666;
+}
+
 
 /*
 Links -------------------
