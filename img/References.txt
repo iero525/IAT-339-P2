@@ -2,7 +2,6 @@ company_background: Photo by Osman Hussaini. Retrieved from https://unsplash.com
 new_arrivals: Photo by Malte Michels. Retrieved from https://unsplash.com/photos/s4wGZw3UuLk
 events_background: Photo by Shane Rounce. Retrieved from https://unsplash.com/photos/DNkoNXQti3c
 aloe_vera: Photo by feey. Retrieved from https://unsplash.com/photos/nU9U66FMutc
-
 philodendron_pink_princess: Photo by feey. Retrieved from https://unsplash.com/photos/Ww8E7cc1s9c
 philodendron_birkin: Photo by feey. Retrieved from https://unsplash.com/photos/WlZQb4bt8r8
 aglaonema_kiwi Photo by feey. Retrieved from https://unsplash.com/photos/euXL7EKJItE
