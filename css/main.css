@@ -814,6 +814,11 @@ main#home #products {
 .container-best-sellers {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 5rem;
+}
+
+.container-best-sellers h2{
+  font-size: 1.5rem;
 }
 
 .column-best-sellers {
