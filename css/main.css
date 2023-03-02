@@ -997,6 +997,44 @@ input[type="submit"]:hover {
 }
 /* END OF DETAILS PAGE */
 
+/* Style the select elements */
+select {
+  font-size: 16px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Style the dropdown arrow */
+select::-ms-expand {
+  display: none;
+}
+
+select::-webkit-scrollbar {
+  width: 6px;
+}
+
+select::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+  border-radius: 3px;
+}
+
+select::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 3px;
+}
+
+/* Style the labels */
+label {
+  font-weight: bold;
+}
+
+/* Optional: style the option elements */
+option {
+  font-size: 16px;
+}
+
+
 /* NEW CHECKOUT INTERFACE */
 .new-checkout {
   display: -ms-flexbox; /* IE10 */
