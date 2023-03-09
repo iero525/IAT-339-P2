@@ -481,13 +481,6 @@ Buttons -------------------
   color: #001f25;
 }
 
-@media (max-width: 415px) {
-  .button-large{
-    font-size: 1rem;
-    bottom: 37vh;
-  }
-
-}
 /*
 End of Buttons -------------------
 */
@@ -549,6 +542,7 @@ COMBINED ELEMENTS -------------------
   z-index: 1;
   position: sticky;
   top: 0rem;
+  background-color: white;
 }
 
 .main-nav {
@@ -1344,4 +1338,19 @@ span.price {
   .col-25 {
     margin-bottom: 20px;
   }
+}
+
+@media (max-width: 415px) {
+  .button-large{
+    font-size: 1rem;
+  }
+
+  .info-block{
+    padding: 0.5rem;
+  }
+
+  #company-info.info-block{
+    padding: 0.5rem;
+  }
+
 }
