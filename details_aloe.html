@@ -102,7 +102,15 @@
             name="comment"
             placeholder="Thank you for your valuable comment!"
           ></textarea>
-          <input type="submit" value="Submit" />
+          <!-- Refference: https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_input_type_button -->
+          <input type="submit" value="Submit" onclick="msg()" />
+          <!-- Refference: https://stackoverflow.com/questions/14837466/clearing-a-text-field-on-button-click -->
+          <script>
+            function msg() {
+              document.getElementById("comment").value = "";
+              alert("Thank you!");
+            }
+          </script>
         </section>
       </section>
     </main>
