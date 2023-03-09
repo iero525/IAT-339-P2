@@ -1357,4 +1357,8 @@ span.price {
     display: none;
   }
 
+  .new-checkout-col-50 .button-submit,
+  .new-checkout-col-50 .button-reset{
+    font-size: 0.56rem;
+  }
 }
