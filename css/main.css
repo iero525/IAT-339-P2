@@ -923,7 +923,7 @@ main#home #products {
 }
 /* END OF ABOUT PAGE */
 
-/* CONTACT PAGE */
+/* START OF CONTACT PAGE */
 /* Style inputs */
 input[type="text"],
 select,
@@ -954,11 +954,24 @@ input[type="submit"]:hover {
 }
 
 /* Style the container/contact section */
-.container {
+.contact-container {
   border-radius: 5px;
   background-color: #fcfdf7;
   padding: 10px;
 }
+.contact-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.contact-column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+}
+
+/* END OF CONTACT PAGE */
 
 /* DETAILS PAGE */
 #details .image-wide img {
