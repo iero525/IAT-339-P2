@@ -47,10 +47,10 @@
     </section>
 
     <div class="new-checkout-row">
-      <div class="new-checkout-col-50">
+      <div class="new-checkout-col-25">
         <div class="new-checkout-container">
           <form action="/action_page.php">
-            <div class="new-checkout-row">
+            <div class="new-checkout-row">  
               <div class="new-checkout-col-50">
                 <h3>SHOPPING CART</h3>
                 <img src="img/evergreen.png" style="width: 60%" alt="evergreen_logo"/>
@@ -108,7 +108,9 @@
                   <input type="checkbox" checked="checked" name="sameadr" />
                   Shipping address same as billing
                 </label>
-                <input type="submit" value="Continue to checkout" class="btn" />
+                <a href="thankyou.html">
+                  <input type="submit" onclick="" value="Continue to checkout" class="btn"/>
+                </a>
               </div>
             </div>
           </form>
@@ -116,19 +118,26 @@
       </div>
 
       <div class="new-checkout-col-50">
+        <div class="new-order-container">
+          <article id="checkout_cart" class="cart">
             <section class="cart-details flex-cart-details">
               <table>
                 <tr>
                   <th>Products</th>
-                  <th>Name</th>
                   <th>Price</th>
                   <th>Amount</th>
+                  <th>Total</th>
                 </tr>
                 <tr>
                   <td>
-                    <a href="details_aloe.html" class="link-intext image-wrapper image-as-link"><img src="img/aloe_vera.jpg" alt="Aloe vera" width="300" height="300"/></a>
+                    <a
+                      href="details_aloe.html"
+                      class="link-intext image-wrapper image-as-link"
+                      ><img src="img/aloe_vera.jpg" alt="Aloe vera"
+                    /></a>
+                    <br />
+                    Aloe Vera
                   </td>
-                  <td>Aloe Vera</td>
                   <td>$19.99/each</td>
                   <td>1</td>
                   <td>$19.99</td>
@@ -157,10 +166,11 @@
                 </tr>
               </table>
             </section>
+          </article>
+        </div>
         </div>
       </div>
     </div>
-
     <footer>
       <section id="media" class="image-as-link image-wrapper flex-media">
         <a href="https://fontawesome.com/icons/youtube?s=&f=brands"
