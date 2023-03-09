@@ -1353,4 +1353,8 @@ span.price {
     padding: 0.5rem;
   }
 
+  #company-info img{
+    display: none;
+  }
+
 }
