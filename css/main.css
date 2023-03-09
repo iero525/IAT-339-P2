@@ -1085,6 +1085,10 @@ option {
   flex: 50%;
 }
 
+.new-checkout-row .image-as-link{
+  scale: 50%;
+}
+
 .new-checkout-col-75 {
   -ms-flex: 75%; /* IE10 */
   flex: 75%;
