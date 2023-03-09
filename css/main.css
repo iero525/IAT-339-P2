@@ -1066,7 +1066,7 @@ option {
 }
 
 /* NEW CHECKOUT INTERFACE */
-.new-checkout {
+.new-checkout-row {
   display: -ms-flexbox; /* IE10 */
   display: flex;
   -ms-flex-wrap: wrap; /* IE10 */
@@ -1155,6 +1155,11 @@ span.price {
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
+  .contact-column,
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 0;
+  }
   .column,
   input[type="submit"] {
     width: 100%;
@@ -1206,4 +1211,45 @@ End of Specific Pages -------------------
   #details h4 {
     max-width: 70%;
   }
+}
+
+#main-container {
+  border: 5px solid #3F3F3F;
+  width: 270px;
+}
+.container {
+  width: 570px;
+  height: 308px;
+  border: 5px solid #7F0008;
+  margin: 5px;
+}
+.box {
+  display: inline-block;
+  vertical-align: top;
+  width: 85px;
+  height: 85px;
+  background: #446C74;
+  margin: 5px;
+}
+.content {
+  display: inline-block;
+  vertical-align: top;
+}
+.title, .sub-title {
+  margin: 0;
+  padding: 3px 10px 3px 0;
+}
+.title {
+  font-size: 17px;
+  font-weight: bold;
+}
+.sub-title {
+  font-weight: bold;
+  color: #3F3F3F;
+}
+.img {
+  background: url(http://placehold.it/100/25);
+  width: 100px;
+  height: 25px;
+  border: 5px solid #EBEAAE;
 }
