@@ -424,121 +424,115 @@
           <code>&lt;/div&gt;</code>
 
           <h4>Rendered element:</h4>
-          <div class="new-checkout-col-25">
-            <div class="new-checkout-container">
-              <form action="/action_page.php">
-                <div class="new-checkout-row">
-                  <div class="new-checkout-col-50">
-                    <h3>SHOPPING CART</h3>
-                    <img
-                      src="img/evergreen.png"
-                      style="width: 60%"
-                      alt="evergreen_logo"
-                    />
-                    <label>Accepted Cards</label>
-                    <div class="icon-container">
-                      <i class="fab fa-cc-visa fa-2x" style="color: navy"></i>
-                      <i class="fab fa-cc-amex fa-2x" style="color: blue"></i>
-                      <i
-                        class="fab fa-cc-mastercard fa-2x"
-                        style="color: red"
-                      ></i>
-                      <i
-                        class="fab fa-cc-discover fa-2x"
-                        style="color: orange"
-                      ></i>
-                    </div>
-                    <label for="cname"
-                      ><i class="fa fa-user"></i>Name on Card</label
-                    >
-                    <input
-                      type="text"
-                      id="cname"
-                      name="cardname"
-                      placeholder="John More Doe"
-                    />
-
-                    <label for="email"
-                      ><i class="fa fa-envelope"></i> Email</label
-                    >
-                    <input
-                      type="text"
-                      id="email"
-                      name="email"
-                      placeholder="john@example.com"
-                    />
-                    <label for="adr"
-                      ><i class="fa fa-address-card-o"></i> Billing
-                      Address</label
-                    >
-                    <input
-                      type="text"
-                      id="adr"
-                      name="address"
-                      placeholder="542 W. 15th Street"
-                    />
-                    <label for="ccnum">Credit card number</label>
-                    <input
-                      type="text"
-                      id="ccnum"
-                      name="cardnumber"
-                      placeholder="111-222-3333"
-                    />
-
-                    <label for="year">Select a year:</label>
-                    <select id="year" name="year">
-                      <!-- Loop through the years from 1990 to 2330 using JavaScript -->
-                      <script>
-                        for (var year = 1980; year <= 2050; year++) {
-                          var option = document.createElement("option");
-                          option.value = year;
-                          option.text = year;
-                          document.getElementById("year").appendChild(option);
-                        }
-                      </script>
-                    </select>
-
-                    <label for="month">Select a month:</label>
-                    <select id="month" name="month">
-                      <option value="1">January</option>
-                      <option value="2">February</option>
-                      <option value="3">March</option>
-                      <option value="4">April</option>
-                      <option value="5">May</option>
-                      <option value="6">June</option>
-                      <option value="7">July</option>
-                      <option value="8">August</option>
-                      <option value="9">September</option>
-                      <option value="10">October</option>
-                      <option value="11">November</option>
-                      <option value="12">December</option>
-                    </select>
-                    <!--<div class="new-checkout-row">-->
-
-                    <label for="cvv">CVV</label>
-                    <input type="text" id="cvv" name="cvv" placeholder="352" />
-
-                    <label>
-                      <input type="checkbox" checked="checked" name="sameadr" />
-                      Shipping address same as billing
-                    </label>
-                    <div class="new-checkout-row">
-                      <div class="new-checkout-col-50">
-                        <a href="products1.html" class="button-reset"
-                          >Continue shopping?</a
-                        >
+              <div class="new-checkout-container">
+                <form action="/action_page.php">
+                  <div class="new-checkout-row">
+                    <div class="new-checkout-col-50">
+                      <h3>SHOPPING CART</h3>
+                      <img
+                        src="img/evergreen.png"
+                        style="width: 60%"
+                        alt="evergreen_logo"
+                      />
+                      <label>Accepted Cards</label>
+                      <div class="icon-container">
+                        <i class="fab fa-cc-visa fa-2x" style="color: navy"></i>
+                        <i class="fab fa-cc-amex fa-2x" style="color: blue"></i>
+                        <i
+                          class="fab fa-cc-mastercard fa-2x"
+                          style="color: red"
+                        ></i>
+                        <i
+                          class="fab fa-cc-discover fa-2x"
+                          style="color: orange"
+                        ></i>
                       </div>
-                      <div class="new-checkout-col-50">
-                        <a href="thankyou.html" class="button-submit"
-                          >Continue to checkout</a
-                        >
+                      <label for="cname"
+                        ><i class="fa fa-user"></i>Name on Card</label
+                      >
+                      <input
+                        type="text"
+                        id="cname"
+                        name="cardname"
+                        placeholder="John More Doe"
+                      />
+
+                      <label for="email"
+                        ><i class="fa fa-envelope"></i> Email</label
+                      >
+                      <input
+                        type="text"
+                        id="email"
+                        name="email"
+                        placeholder="john@example.com"
+                      />
+                      <label for="adr"
+                        ><i class="fa fa-address-card-o"></i> Billing
+                        Address</label
+                      >
+                      <input
+                        type="text"
+                        id="adr"
+                        name="address"
+                        placeholder="542 W. 15th Street"
+                      />
+                      <label for="ccnum">Credit card number</label>
+                      <input
+                        type="text"
+                        id="ccnum"
+                        name="cardnumber"
+                        placeholder="111-222-3333"
+                      />
+
+                      <label for="year">Select a year:</label>
+                      <select id="year" name="year">
+                        <!-- Loop through the years from 1990 to 2330 using JavaScript -->
+                        <script>
+                          for (var year = 1980; year <= 2050; year++) {
+                            var option = document.createElement("option");
+                            option.value = year;
+                            option.text = year;
+                            document.getElementById("year").appendChild(option);
+                          }
+                        </script>
+                      </select>
+
+                      <label for="month">Select a month:</label>
+                      <select id="month" name="month">
+                        <option value="1">January</option>
+                        <option value="2">February</option>
+                        <option value="3">March</option>
+                        <option value="4">April</option>
+                        <option value="5">May</option>
+                        <option value="6">June</option>
+                        <option value="7">July</option>
+                        <option value="8">August</option>
+                        <option value="9">September</option>
+                        <option value="10">October</option>
+                        <option value="11">November</option>
+                        <option value="12">December</option>
+                      </select>
+                      <!--<div class="new-checkout-row">-->
+
+                      <label for="cvv">CVV</label>
+                      <input type="text" id="cvv" name="cvv" placeholder="352" />
+
+                      <label>
+                        <input type="checkbox" checked="checked" name="sameadr" />
+                        Shipping address same as billing
+                      </label>
+                      <div class="new-checkout-row">
+                        <div class="new-checkout-col-50">
+                          <a class="button-reset" href="products.html">Continue shopping?</a>
+                        </div>
+                        <div class="new-checkout-col-50">
+                          <a class="button-submit" href="thankyou.htm">Continue to checkout</a>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </form>
-            </div>
-          </div>
+                </form>
+              </div>
         </section>
 
         <!-- CHECKOUT CART -->
@@ -588,52 +582,50 @@
 
           <h4>Rendered element:</h4>
           <div class="new-checkout-col-50">
-            <div class="new-order-container">
-              <article id="checkout_cart" class="cart">
-                <section class="cart-details flex-cart-details">
-                  <table>
-                    <tr>
-                      <th>Products</th>
-                      <th>Price</th>
-                      <th>Amount</th>
-                    </tr>
-                    <tr>
-                      <td>
-                        <a
-                          href="details_aloe.html"
-                          class="link-intext image-wrapper image-as-link"
-                          ><img src="img/aloe_vera.jpg" alt="Aloe vera"
-                        /></a>
-                        <br />
-                        Aloe Vera
-                      </td>
-                      <td>$19.99</td>
-                      <td>1</td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <a
-                          href="details_dracaena.html"
-                          class="link-intext image-wrapper image-as-link"
-                          ><img
-                            src="img/aglaonema_kiwi.jpg"
-                            alt="Two hands holding a Aglaonema Kiwi"
-                        /></a>
-                        <br />
-                        AGLAONEMA KIWI
-                      </td>
-                      <td>$34.49</td>
-                      <td>1</td>
-                    </tr>
-                    <tr>
-                      <th>Total</th>
-                      <th></th>
-                      <th>$54.48</th>
-                    </tr>
-                  </table>
-                </section>
-              </article>
-            </div>
+            <article id="checkout_cart" class="cart">
+              <section class="cart-details flex-cart-details">
+                <table>
+                  <tr>
+                    <th>Products</th>
+                    <th>Price</th>
+                    <th>Amount</th>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a
+                        href="details_aloe.html"
+                        class="link-intext image-wrapper image-as-link"
+                        ><img src="img/aloe_vera.jpg" alt="Aloe vera"
+                      /></a>
+                      <br />
+                      Aloe Vera
+                    </td>
+                    <td>$19.99</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a
+                        href="details_dracaena.html"
+                        class="link-intext image-wrapper image-as-link"
+                        ><img
+                          src="img/aglaonema_kiwi.jpg"
+                          alt="Two hands holding a Aglaonema Kiwi"
+                      /></a>
+                      <br />
+                      AGLAONEMA KIWI
+                    </td>
+                    <td>$34.49</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <th>Total</th>
+                    <th></th>
+                    <th>$54.48</th>
+                  </tr>
+                </table>
+              </section>
+            </article>
           </div>
         </section>
       </section>
