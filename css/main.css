@@ -928,7 +928,7 @@ input[type="text"],
 select,
 textarea {
   width: 100%;
-  padding: 0.75vm;
+  padding: 0.75vmin;
   border: 1px solid #cecdcd;
   margin-top: 6px;
   margin-bottom: 16px;
