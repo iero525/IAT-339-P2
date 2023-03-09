@@ -480,6 +480,14 @@ Buttons -------------------
   background-color: #bdeaf5;
   color: #001f25;
 }
+
+@media (max-width: 415px) {
+  .button-large{
+    font-size: 1rem;
+    bottom: 37vh;
+  }
+
+}
 /*
 End of Buttons -------------------
 */
