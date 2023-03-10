@@ -163,6 +163,11 @@ p {
   line-height: 1.44rem;
 }
 
+a {
+  line-height: 1.44rem;
+  word-wrap: break-word;
+}
+
 /* List */
 ol {
   line-height: 1.5rem;
@@ -171,6 +176,10 @@ ol {
 li::marker {
   color: #0a6d36;
   font-style: italic;
+}
+
+li{
+  margin-bottom: 0.5rem;
 }
 
 /* Header */
@@ -816,7 +825,7 @@ main#home #products {
   margin-bottom: 5rem;
 }
 
-.container-best-sellers h2{
+.container-best-sellers h2 {
   font-size: 1.5rem;
 }
 
@@ -921,6 +930,12 @@ main#home #products {
   margin: 1rem;
 }
 /* END OF ABOUT PAGE */
+
+/* START OF CITATION PAGE */
+main#citation{
+  width: 80%;
+}
+/* END OF CITATION PAGE */
 
 /* START OF CONTACT PAGE */
 /* Style inputs */
@@ -1075,7 +1090,7 @@ option {
 }
 
 .new-checkout-col-50 .button-submit,
-.new-checkout-col-50 .button-reset{
+.new-checkout-col-50 .button-reset {
   border-radius: 6px;
 }
 
@@ -1089,7 +1104,7 @@ option {
   flex: 50%;
 }
 
-.new-checkout-row .image-as-link{
+.new-checkout-row .image-as-link {
   scale: 109%;
 }
 
@@ -1110,8 +1125,8 @@ option {
   border-radius: 3px; */
 }
 .new-order-container {
-  background: #FFFFFF;
-  border: 1.75px solid #0A6D36;
+  background: #ffffff;
+  border: 1.75px solid #0a6d36;
   margin-top: 4rem;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 36px;
@@ -1282,7 +1297,7 @@ End of Specific Pages -------------------
   border-radius: 3px;
 }
 
-input[type=text] {
+input[type="text"] {
   width: 100%;
   margin-bottom: 20px;
   padding: 12px;
@@ -1302,7 +1317,7 @@ label {
 }
 
 .btn {
-  background-color: #04AA6D;
+  background-color: #04aa6d;
   color: white;
   padding: 12px;
   margin: 10px 0;
@@ -1341,27 +1356,26 @@ span.price {
 }
 
 @media (max-width: 415px) {
-  .button-large{
+  .button-large {
     font-size: 1rem;
   }
 
-  .info-block{
+  .info-block {
     padding: 0.5rem;
   }
 
-  #company-info.info-block{
+  #company-info.info-block {
     padding: 0.5rem;
   }
-
 }
 
 @media (max-width: 603px) {
-  #company-info img{
+  #company-info img {
     display: none;
   }
 
   .new-checkout-col-50 .button-submit,
-  .new-checkout-col-50 .button-reset{
+  .new-checkout-col-50 .button-reset {
     font-size: 1rem;
   }
 
