@@ -1364,4 +1364,9 @@ span.price {
   .new-checkout-col-50 .button-reset{
     font-size: 0.56rem;
   }
+
+  main#style-guide {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
