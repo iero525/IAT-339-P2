@@ -1353,6 +1353,9 @@ span.price {
     padding: 0.5rem;
   }
 
+}
+
+@media (max-width: 603px) {
   #company-info img{
     display: none;
   }
